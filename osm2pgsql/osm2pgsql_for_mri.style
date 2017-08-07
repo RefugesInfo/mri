@@ -1,0 +1,131 @@
+# This is the style file that matches the old version of osm2pgsql, which
+# did not make distinctions between tags for nodes and for ways. There are a
+# number of optimisations that can be applied here. Firstly, certain tags
+# only apply to only nodes or only ways. By fixing this we reduce the amount
+# of useless data loaded into the DB, which is a good thing. Possible
+# optimisations for the future:
+
+# 1. Generate this file directly from the mapnik XML config, so it's always
+# optimal
+
+# 2. Extend it so it can understand that highway=tertiary is for ways and
+# highway=bus_stop is for nodes
+
+# Flags field isn't used much yet, expect if it contains the text "polygon"
+# it indicates the shape is candidate for the polygon table. In the future I
+# would like to be able to add directives like "nocache" which tells
+# osm2pgsql that it is unlikely this node will be used by a way and so it
+# doesn't need to be stored (eg coastline nodes). While in essence an
+# optimisation hack, for --slim mode it doesn't matter if you're wrong, but
+# in non-slim you might break something!
+
+# Also possibly an ignore flag, for things like "note" and "source" which
+# can simply be deleted. (In slim mode this is, does not apply to non-slim
+# obviously)
+
+# OsmType  Tag          DataType     Flags
+#node,way   source       text         deleted   # This indicates that we shouldn't store them
+#node,way   ts           timestamp    linear
+
+#sly's special
+#node,way   fixme        text         linear
+#node,way   FIXME        text	     linear
+#node,way   note         text         linear 
+#node,way   validate:no_name text     linear
+#node,way   validate:no_ref text      linear
+#node,way   validate:my_own text      linear
+#node,way   ref:INSEE    text         linear
+#node,way   ref:sandre	text		linear
+
+
+#sly's mountain stuff
+node       mountain_pass text        linear
+node,way   ele		text	     linear
+way        smoothness   text         linear
+way	   sac_scale    text         linear
+way        trail_visibility text     linear
+way	   protect_class	text	     linear
+node,way   shelter_type text         linear
+
+#end sly
+
+#Ont été viré pour limiter la place, car peu utile pour moi :
+#node,way   bicycle      text         nocache
+#node,way   cutting      text         linear
+#node,way   foot         text         linear
+#node,way   disused      text         linear
+#node,way   learning     text         linear
+#node,way   motorcar     text         linear
+#node       poi          text
+#node,way   horse        text         linear
+#node,way   religion     text         nocache
+#node,way   residence    text         linear 
+#node,way   route        text         linear 
+#node,way   width        text         linear
+#node,way   wood         text         linear 
+
+#Je l'aurais bien gardé, mais j'ai vraiment plus de place
+# sur les SSD
+#en fait, le commenter ne le retire pas de la base, donc je vais devoir 
+#faire des delete a la main comme un con
+#finalement j'ai de la place, mais je vais quand même retirer à la main
+#les bâtiments sans tags additionnels
+
+node,way   building     text         polygon
+
+#Tags génériques pour le rendu du reste
+node,way   access       text         linear
+node,way   admin_level  text         linear
+way        aerialway    text         linear
+node,way   aeroway      text         polygon
+node,way   amenity      text         nocache,polygon
+node,way   area         text         # hard coded support for area=1/yes => polygon is in osm2pgsql
+node,way   bridge       text         linear
+node,way   boundary     text         linear
+node,way   embankment   text         linear
+node,way   highway      text         linear
+node,way   junction     text         linear
+node,way   landuse      text         polygon
+node,way   layer        text         linear
+node,way   leisure      text         polygon
+node,way   man_made     text         polygon
+node,way   military     text         polygon
+node,way   name         text         linear
+node,way   natural      text         polygon  # natural=coastline tags are discarded by a hard coded rule in osm2pgsql
+node,way   oneway       text         linear
+node,way   power        text         polygon
+node,way   power_source text         linear
+node,way   place        text         linear
+node,way   railway      text         linear
+node,way   ref          text         linear
+node,way   sport        text         polygon
+node,way   tourism      text         polygon
+#way        tracktype    text         linear
+node,way   tunnel       text         linear
+node,way   waterway     text         polygon
+node,way   z_order      int4         linear # This is calculated during import
+way        way_area     real                # This is calculated during import
+
+# If you're interested in bicycle routes, you may want the following fields
+# To make these work you need slim mode or the necessary data won't be remembered.
+#way       lcn_ref      text     linear
+#way       rcn_ref      text     linear
+#way       ncn_ref      text     linear
+#way       lcn          text     linear
+#way       rcn          text     linear
+#way       ncn          text     linear
+#way       lwn_ref      text     linear
+#way       rwn_ref      text     linear
+#way       nwn_ref          text     linear
+#way       lwn              text     linear
+#way       rwn              text     linear
+#way       nwn              text     linear
+#way       route_pref_color text     linear
+#way       route_name       text     linear
+
+#node,way  osm_user       text
+#node,way  osm_uid        text
+#node,way  osm_version    text
+
+# could be good, but generate far too much data -- sly
+#node,way  osm_timestamp  timestamp	linear
