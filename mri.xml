@@ -98,29 +98,29 @@
       <MaxScaleDenominator>250000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[railway]='station'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/halt.png"/>
+      <PointSymbolizer file="symbols/halt.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>25000</MinScaleDenominator>
       <Filter>[railway]='station'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/station_small.png"/>
+      <PointSymbolizer file="symbols/station_small.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <Filter>[railway]='station'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/station.png"/>
+      <PointSymbolizer file="symbols/station.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
       <Filter>[railway]='halt' or [railway]='tram_stop' or [aeroway]='station'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/halt.png"/>
+      <PointSymbolizer file="symbols/halt.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[railway]='halt' or [railway]='tram_stop' or [aeroway]='station'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/station_small.png"/>
+      <PointSymbolizer file="symbols/station_small.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -148,7 +148,7 @@
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>10000</MinScaleDenominator>
       <Filter>[railway]='level_crossing'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/level_crossing.png"/>
+      <PointSymbolizer file="symbols/level_crossing.png"/>
     </Rule>
   </Style>
    <Style name="symbols">
@@ -156,7 +156,7 @@
       <MaxScaleDenominator>2000000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <Filter>[aeroway]='airport'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/airport.p.16.png"/>
+      <PointSymbolizer file="symbols/airport.p.16.png"/>
       <TextSymbolizer size="9" fill="#6692da" dy="-12" face-name="DejaVu Sans Bold" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -169,7 +169,7 @@
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <Filter>[aeroway]='aerodrome'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/aerodrome.p.16.png"/>
+      <PointSymbolizer file="symbols/aerodrome.p.16.png"/>
       <TextSymbolizer size="9" fill="#6692da" dy="-12" face-name="DejaVu Sans Oblique" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -182,182 +182,182 @@
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>10000</MinScaleDenominator>
       <Filter>[railway]='level_crossing'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/level_crossing.png"/>
+      <PointSymbolizer file="symbols/level_crossing.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[railway]='level_crossing'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/level_crossing2.png"/>
+      <PointSymbolizer file="symbols/level_crossing2.png"/>
     </Rule> 
     
 	<!-- hiking poi -->
 	<Rule>
 	<MaxScaleDenominator>500000</MaxScaleDenominator>
 	<Filter>[natural]='peak'</Filter>
-	<PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/peak.png"/>
+	<PointSymbolizer file="symbols/peak.png"/>
 		</Rule>
 		<Rule>
 		<MaxScaleDenominator>500000</MaxScaleDenominator>
 		<Filter>[tourism]='alpine_hut'</Filter>
-		<PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/alpine_hut.png"/>
+		<PointSymbolizer file="symbols/alpine_hut.png"/>
 		</Rule>
 	<Rule>
 		<MaxScaleDenominator>500000</MaxScaleDenominator>
 		<Filter>[tourism] = 'basic_hut'</Filter>
-		<PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/basic_hut.png"/>
+		<PointSymbolizer file="symbols/basic_hut.png"/>
 	</Rule>
 	<Rule>
 		<MaxScaleDenominator>500000</MaxScaleDenominator>
 		<Filter>[tourism]='wilderness_hut'</Filter>
-		<PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/wilderness_hut.png"/>
+		<PointSymbolizer file="symbols/wilderness_hut.png"/>
 	</Rule>
 	<Rule>
 		<MaxScaleDenominator>200000</MaxScaleDenominator>
 		<Filter>[tourism]='lean_to'</Filter>
-		<PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/lean_to.png"/>
+		<PointSymbolizer file="symbols/lean_to.png"/>
 	</Rule>
 	<Rule>
 		<MaxScaleDenominator>200000</MaxScaleDenominator>
 		<Filter>[amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to')</Filter>
-		<PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/shelter.png"/>
+		<PointSymbolizer file="symbols/shelter.png"/>
 	</Rule>
     <Rule>
 	    <MaxScaleDenominator>20000</MaxScaleDenominator>
 	    <Filter>[tourism]='viewpoint'</Filter>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/viewpoint.png"/>
+	    <PointSymbolizer file="symbols/viewpoint.png"/>
     </Rule>
     <Rule>
-	    <MaxScaleDenominator>20000</MaxScaleDenominator>
+	    <MaxScaleDenominator>100000</MaxScaleDenominator>
 	    <Filter>[tourism]='information'</Filter>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/guidepost.png"/>
+	    <PointSymbolizer file="symbols/guidepost.png"/>
     </Rule>
     <Rule>
 	    <MaxScaleDenominator>20000</MaxScaleDenominator>
 	    <Filter>[amenity]='drinking_water'</Filter>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/drinking_water.png"/>
+	    <PointSymbolizer file="symbols/drinking_water.png"/>
     </Rule>
     <Rule>
 	    <MaxScaleDenominator>20000</MaxScaleDenominator>
 	    <Filter>[natural]='spring'</Filter>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/spring.png"/>
+	    <PointSymbolizer file="symbols/spring.png"/>
     </Rule>
 
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[man_made]='power_wind' or ([power]='generator' and [power_source] = 'wind')</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/power_wind.png"/>
+      <PointSymbolizer file="symbols/power_wind.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[man_made]='windmill'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/windmill.png"/>
+      <PointSymbolizer file="symbols/windmill.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[man_made]='mast'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/communications.p.20.png"/>
+      <PointSymbolizer file="symbols/communications.p.20.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[highway]='mini_roundabout'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/mini_round.png" allow-overlap="false"/>
+      <PointSymbolizer file="symbols/mini_round.png" allow-overlap="false"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[highway]='gate'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/gate2.png" allow-overlap="false"/>
+      <PointSymbolizer file="symbols/gate2.png" allow-overlap="false"/>
     </Rule>
 </Style>
 <Style name="points">
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='atm'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/atm2.p.16.png"/>
+      <PointSymbolizer file="symbols/atm2.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='bank'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/bank2.p.16.png"/>
+      <PointSymbolizer file="symbols/bank2.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='bar'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/bar.p.20.png"/>
+      <PointSymbolizer file="symbols/bar.p.20.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='bus_stop' or [highway]='bus_stop'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/bus_stop.p.12.png"/>
+      <PointSymbolizer file="symbols/bus_stop.p.12.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='cafe'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/cafe.p.16.png"/>
+      <PointSymbolizer file="symbols/cafe.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='fuel'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/fuel.p.16.png"/>
+      <PointSymbolizer file="symbols/fuel.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[amenity]='hospital'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/hospital.p.16.png"/>
+      <PointSymbolizer file="symbols/hospital.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[tourism]='hotel'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/hotel2.p.20.png"/>
+      <PointSymbolizer file="symbols/hotel2.p.20.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[man_made]='mast'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/communications.p.20.png"/>
+      <PointSymbolizer file="symbols/communications.p.20.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[tourism]='museum'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/museum.p.16.png"/>
+      <PointSymbolizer file="symbols/museum.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[amenity]='parking'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/parking.p.16.png" allow-overlap="false"/>
+      <PointSymbolizer file="symbols/parking.p.16.png" allow-overlap="false"/>
     </Rule>
      <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[amenity]='place_of_worship'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/place_of_worship3.p.16.png" allow-overlap="false"/>
+      <PointSymbolizer file="symbols/place_of_worship3.p.16.png" allow-overlap="false"/>
      </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='post_box'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/post_box.p.16.png"/>
+      <PointSymbolizer file="symbols/post_box.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='post_office'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/post_office.p.16.png"/>
+      <PointSymbolizer file="symbols/post_office.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[amenity]='pub'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/pub.p.16.png"/>
+      <PointSymbolizer file="symbols/pub.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[amenity]='recycling'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/recycling.p.16.png"/>
+      <PointSymbolizer file="symbols/recycling.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='restaurant'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/restaurant.p.16.png"/>
+      <PointSymbolizer file="symbols/restaurant.p.16.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='telephone'</Filter>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/telephone.p.16.png"/>
+      <PointSymbolizer file="symbols/telephone.p.16.png"/>
     </Rule>
   </Style>
 
@@ -396,7 +396,7 @@
     <Rule>
       <Filter>[landuse] = 'quarry'</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/quarry2.png"/>
+      <PolygonPatternSymbolizer file="symbols/quarry2.png"/>
       <LineSymbolizer stroke="grey" stroke-width="0.5"/></Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
@@ -407,12 +407,12 @@
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/vineyard.png"/>
+      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
     </Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/vineyard.png"/>
+      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
@@ -438,12 +438,12 @@
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>1000</MinScaleDenominator>
       <Filter>[military] = 'danger_area'</Filter>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/danger.png"/>
+      <PolygonPatternSymbolizer file="symbols/danger.png"/>
     </Rule>
      <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[landuse] = 'cemetery'</Filter>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/grave_yard.png"/>
+      <PolygonPatternSymbolizer file="symbols/grave_yard.png"/>
     </Rule>
 
      <Rule>
@@ -453,17 +453,17 @@
      <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <Filter>[natural] = 'wetland'</Filter>
-      <PolygonSymbolizer fill-opacity="0.4" fill="#23bfab"/><PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/marsh.png"/>
+      <PolygonSymbolizer fill-opacity="0.4" fill="#23bfab"/><PolygonPatternSymbolizer file="symbols/marsh.png"/>
     </Rule>
      <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <Filter>[natural] = 'rock' or [natural] = 'bare_rock' or [natural] = 'cliff'</Filter>
-      <PolygonSymbolizer fill-opacity="0.5" fill="#e0dede"/><PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/rock.png"/>
+      <PolygonSymbolizer fill-opacity="0.5" fill="#e0dede"/><PolygonPatternSymbolizer file="symbols/rock.png"/>
     </Rule>
      <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <Filter>[natural] = 'scree'</Filter>
-      <PolygonSymbolizer fill-opacity="0.5" fill="#e0dede"/><PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/scree.png"/>
+      <PolygonSymbolizer fill-opacity="0.5" fill="#e0dede"/><PolygonPatternSymbolizer file="symbols/scree.png"/>
     </Rule>
      <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
@@ -477,7 +477,7 @@
     <Rule>
       <Filter>[tourism] = 'zoo'</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/zoo.png"/>
+      <PolygonPatternSymbolizer file="symbols/zoo.png"/>
     </Rule>
     <Rule>
       <Filter>[leisure] = 'common'</Filter>
@@ -504,7 +504,7 @@
     <Rule>
       <Filter>[landuse] = 'forest'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/forest_transparent.png"/>
+      <PolygonPatternSymbolizer file="symbols/forest_transparent.png"/>
     </Rule>
     <Rule>
       <Filter>[landuse] = 'farm'</Filter>
@@ -548,7 +548,7 @@
     <Rule>
       <Filter>[natural] = 'glacier'</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <LineSymbolizer stroke="#9cf" stroke-width="1.5" stroke-dasharray="4,2"/><PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/glacier2.png"/>
+      <LineSymbolizer stroke="#9cf" stroke-width="1.5" stroke-dasharray="4,2"/><PolygonPatternSymbolizer file="symbols/glacier2.png"/>
     </Rule>
 
     <Rule>
@@ -635,32 +635,32 @@
     <Rule>
       <Filter>[natural] = 'beach'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/beach.png"/>
+      <PolygonPatternSymbolizer file="symbols/beach.png"/>
     </Rule>
     <Rule>
 	    <Filter>[tourism] = 'alpine_hut'</Filter>
 	    <MaxScaleDenominator>500000</MaxScaleDenominator>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/alpine_hut.png"/>
+	    <PointSymbolizer file="symbols/alpine_hut.png"/>
     </Rule>
     <Rule>
 	    <Filter>[tourism]='wilderness_hut'</Filter>
 	    <MaxScaleDenominator>500000</MaxScaleDenominator>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/wilderness_hut.png"/>
+	    <PointSymbolizer file="symbols/wilderness_hut.png"/>
     </Rule>
     <Rule>
 	    <Filter>[tourism] = 'basic_hut'</Filter>
 	    <MaxScaleDenominator>500000</MaxScaleDenominator>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/basic_hut.png"/>
+	    <PointSymbolizer file="symbols/basic_hut.png"/>
     </Rule>
     <Rule>
 	    <Filter>[tourism] = 'lean_to'</Filter>
 	    <MaxScaleDenominator>200000</MaxScaleDenominator>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/lean_to.png"/>
+	    <PointSymbolizer file="symbols/lean_to.png"/>
     </Rule>
     <Rule>
 	    <Filter>[amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to')</Filter>
 	    <MaxScaleDenominator>200000</MaxScaleDenominator>
-	    <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/shelter.png"/>
+	    <PointSymbolizer file="symbols/shelter.png"/>
     </Rule>
 
     <!--Rule>
@@ -701,12 +701,12 @@
     <Rule>
 	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'lean_to' or [tourism] = 'basic_hut'</Filter>
 	    <MaxScaleDenominator>100000</MaxScaleDenominator>
-	    <TextSymbolizer size="10" fill="brown" dy="15" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
+	    <TextSymbolizer size="12" fill="brown" dy="15" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
     </Rule>    
     <Rule>
 	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'lean_to' or [tourism] = 'basic_hut'</Filter>
 	    <MaxScaleDenominator>50000</MaxScaleDenominator>
-	    <TextSymbolizer size="9" fill="brown" dy="25" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
+	    <TextSymbolizer size="12" fill="brown" dy="28" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
   </Style>
 
@@ -779,15 +779,7 @@
     <Rule>
       <Filter>[tourism] = 'information'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <MinScaleDenominator>10000</MinScaleDenominator>
-      <TextSymbolizer size="10" fill="#000" dy="16" face-name="DejaVu Sans Book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
-      <TextSymbolizer size="10" fill="#000" dy="26" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
-    </Rule>
-    <Rule>
-      <Filter>[tourism] = 'information'</Filter>
-      <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <TextSymbolizer size="11" fill="#777777" dy="14" face-name="DejaVu Sans Book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
-      <TextSymbolizer size="11" fill="#777777" dy="24" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
+      <TextSymbolizer size="10" fill="#000" dy="12" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[amenity] = 'pub' or [amenity]='restaurant' or [amenity]='cafe' or [amenity]='bar'</Filter>
@@ -813,38 +805,38 @@
     <Rule>
       <Filter>[natural] = 'peak'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <TextSymbolizer size="10" fill="brown" dy="12" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
+      <TextSymbolizer size="11" fill="brown" dy="12" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[natural] = 'peak'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <TextSymbolizer size="9" fill="brown" dy="22" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
+      <TextSymbolizer size="10" fill="brown" dy="23" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[tourism] = 'alpine_hut'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <TextSymbolizer size="10" fill="brown" dy="15" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
+      <TextSymbolizer size="12" fill="brown" dy="15" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[tourism] = 'alpine_hut'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <TextSymbolizer size="9" fill="brown" dy="25" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
+      <TextSymbolizer size="12" fill="brown" dy="25" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[tourism] = 'wilderness_hut' or [tourism] = 'basic_hut' or ([amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to'))</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <TextSymbolizer size="10" fill="brown" dy="15" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
+      <TextSymbolizer size="11" fill="brown" dy="15" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
     </Rule>
     <Rule>
 	    <Filter>[tourism] = 'wilderness_hut' or [tourism] = 'basic_hut' or ([amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to'))</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <TextSymbolizer size="9" fill="brown" dy="25" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
+      <TextSymbolizer size="11" fill="brown" dy="25" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[mountain_pass] = 'yes'</Filter>
       <MaxScaleDenominator>60000</MaxScaleDenominator>
-      <TextSymbolizer size="10" fill="brown" dy="12" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
-      <TextSymbolizer size="9" fill="brown" dy="22" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
+      <TextSymbolizer size="11" fill="brown" dy="12" face-name="DejaVu Sans Book" halo-radius="1">[name]</TextSymbolizer>
+      <TextSymbolizer size="9" fill="brown" dy="25" face-name="DejaVu Sans Oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[tourism] = 'viewpoint' or [natural]='spring'</Filter>
@@ -1004,7 +996,7 @@
 <Style name="power_towers">
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <PointSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/power_tower.png" allow-overlap="false"/>
+      <PointSymbolizer file="symbols/power_tower.png" allow-overlap="false"/>
     </Rule>
 </Style>
 <Style name="tunnels-casing">
@@ -1687,7 +1679,7 @@
      <Rule>
 	<MaxScaleDenominator>100000</MaxScaleDenominator>
       <Filter>[highway] = 'via_ferrata'</Filter>       
-       <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/via_ferrata.png"/>
+       <LinePatternSymbolizer file="symbols/via_ferrata.png"/>
     </Rule>
 
     <Rule>
@@ -1865,13 +1857,13 @@
       <Filter>[aerialway] = 'cable_car' or [aerialway]='gondola'</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>1000</MinScaleDenominator>
-      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/cable_car.png"/>
+      <LinePatternSymbolizer file="symbols/cable_car.png"/>
     </Rule>
     <Rule>
       <Filter>[aerialway] = 'chair_lift'</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>1000</MinScaleDenominator>
-      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/chair_lift.png"/>
+      <LinePatternSymbolizer file="symbols/chair_lift.png"/>
     </Rule>
 </Style>
 <Style name="tracks-notunnel-nobridge">
@@ -1880,31 +1872,31 @@
 	   <Filter>[smoothness]='bad' or [smoothness]='intermediate' or [smoothness]='good' or [smoothness]='excellent'</Filter>
 		<MaxScaleDenominator>20000</MaxScaleDenominator>
 
-		<LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly.png"/>
+		<LinePatternSymbolizer file="symbols/track-sly.png"/>
 		
    </Rule>
    <Rule>
       <Filter>[smoothness]='very_bad'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-horrible.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-horrible.png"/>
 
    </Rule>
    <Rule>
       <Filter>[smoothness]='horrible'</Filter>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-horrible.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-horrible.png"/>
 
     </Rule>
     <Rule>
       <Filter>[smoothness]='very_horrible'</Filter>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-vhorrible.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-vhorrible.png"/>
 
    </Rule>
     <Rule>
       <ElseFilter/>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-unknown.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-unknown.png"/>
     </Rule>
     
     	<!-- For lower zooms, make smaller pngs -->
@@ -1913,35 +1905,35 @@
 	   <Filter>[smoothness]='bad' or [smoothness]='intermediate' or [smoothness]='good' or [smoothness]='excellent'</Filter>
 		<MaxScaleDenominator>50000</MaxScaleDenominator>
 		<MinScaleDenominator>20000</MinScaleDenominator>
-		<LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-low.png"/>
+		<LinePatternSymbolizer file="symbols/track-sly-low.png"/>
 		
    </Rule>
    <Rule>
       <Filter>[smoothness]='very_bad'</Filter>
 		<MaxScaleDenominator>50000</MaxScaleDenominator>
 		<MinScaleDenominator>20000</MinScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-horrible-low.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-horrible-low.png"/>
 
    </Rule>
    <Rule>
       <Filter>[smoothness]='horrible'</Filter>
 		<MaxScaleDenominator>50000</MaxScaleDenominator>
 		<MinScaleDenominator>20000</MinScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-horrible-low.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-horrible-low.png"/>
 
     </Rule>
     <Rule>
       <Filter>[smoothness]='very_horrible'</Filter>
 		<MaxScaleDenominator>50000</MaxScaleDenominator>
 		<MinScaleDenominator>20000</MinScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-vhorrible-low.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-vhorrible-low.png"/>
 
    </Rule>
     <Rule>
       <ElseFilter/>
 		<MaxScaleDenominator>50000</MaxScaleDenominator>
 		<MinScaleDenominator>20000</MinScaleDenominator>
-	      <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/track-sly-unknown-low.png"/>
+	      <LinePatternSymbolizer file="symbols/track-sly-unknown-low.png"/>
     </Rule>    
 </Style>
 <Style name="road-bridges-casing">
@@ -2585,233 +2577,233 @@
       <Filter>[highway] = 'motorway' and [length] = 1</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/motorway_shield1.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="symbols/motorway_shield1.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 2</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/motorway_shield2.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="symbols/motorway_shield2.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 3</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/motorway_shield3.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="symbols/motorway_shield3.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 4</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/motorway_shield4.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="symbols/motorway_shield4.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 5</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/motorway_shield5.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="symbols/motorway_shield5.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 6</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/motorway_shield6.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#809bc0" placement="line" file="symbols/motorway_shield6.png" minimum-distance="120" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
 
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 1</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield1.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield1.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 2</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield2.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield2.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 3</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield3.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield3.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 4</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield4.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield4.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 5</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield5.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield5.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 6</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield6.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield6.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 7</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield7.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield7.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 8</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/trunk_shield8.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#a9dba9" placement="line" file="symbols/trunk_shield8.png" minimum-distance="140" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
 
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 1</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield1.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield1.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 2</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield2.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield2.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 3</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield3.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield3.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 4</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield4.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield4.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 5</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield5.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield5.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 6</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield6.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield6.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 7</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield7.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield7.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 8</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/primary_shield8.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#ec989a" placement="line" file="symbols/primary_shield8.png" minimum-distance="160" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
 
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 1</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield1.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield1.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 2</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield2.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield2.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 3</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield3.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield3.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 4</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield4.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield4.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 5</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield5.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield5.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 6</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield6.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield6.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 7</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield7.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield7.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 8</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/secondary_shield8.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#febf6d" placement="line" file="symbols/secondary_shield8.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
 
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 1</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield1.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield1.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 2</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield2.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield2.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 3</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield3.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield3.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 4</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield4.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield4.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 5</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield5.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield5.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 6</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield6.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield6.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 7</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield7.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield7.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and [length] = 8</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer size="11" fill="#999" placement="line" file="/home/sites/maps.refuges.info/ressources/symbols/tertiary_shield8.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
+      <ShieldSymbolizer size="11" fill="#999" placement="line" file="symbols/tertiary_shield8.png" minimum-distance="100" face-name="DejaVu Sans Bold">[ref]</ShieldSymbolizer>
     </Rule>
 
     <Rule>
@@ -2891,17 +2883,17 @@
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
       <Filter>[natural] = 'cliff'</Filter>       
-       <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/cliff.png"/>
+       <LinePatternSymbolizer file="symbols/cliff.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[natural] = 'cliff'</Filter>
-       <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/cliff2.png"/>
+       <LinePatternSymbolizer file="symbols/cliff2.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[man_made] = 'embankment'</Filter>
-       <LinePatternSymbolizer file="/home/sites/maps.refuges.info/ressources/symbols/cliff.png"/>
+       <LinePatternSymbolizer file="symbols/cliff.png"/>
     </Rule>
   </Style>
 <Style name="admin">
