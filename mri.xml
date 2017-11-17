@@ -61,7 +61,7 @@
 		<StyleName>gdal-very-low</StyleName>
 		<Datasource>
 			<Parameter name="type">gdal</Parameter>
-			<Parameter name="file">/home/sites/maps.refuges.info/ressources/aster/europe-hill-shade-very-low.tif</Parameter>
+			<Parameter name="file">DEM-aster/europe-hill-shade-very-low.tif</Parameter>
 			<Parameter name="format">tif</Parameter>
 		</Datasource>
     </Layer>
@@ -75,7 +75,7 @@
 	    <StyleName>gdal-low</StyleName>
 	    <Datasource>
 		    <Parameter name="type">gdal</Parameter>
-		    <Parameter name="file">/home/sites/maps.refuges.info/ressources/aster/europe-hill-shade-low.tif</Parameter>
+		    <Parameter name="file">DEM-aster/europe-hill-shade-low.tif</Parameter>
 		    <Parameter name="format">tif</Parameter>
 	    </Datasource>
     </Layer>
@@ -2933,7 +2933,7 @@
  <StyleName>gdal</StyleName>
  <Datasource>
   <Parameter name="type">gdal</Parameter>
-  <Parameter name="file">/home/sites/maps.refuges.info/ressources/aster/europe-hill-shade.tif</Parameter>
+  <Parameter name="file">DEM-aster/europe-hill-shade.tif</Parameter>
   <Parameter name="format">tif</Parameter>  
  </Datasource>
 </Layer>
@@ -2986,7 +2986,7 @@
 	<StyleName>seas</StyleName>
 	<Datasource>
 		<Parameter name="type">shape</Parameter>
-		<Parameter name="file">/home/sites/maps.refuges.info/ressources/world_boundaries/world-seas/water_polygons</Parameter>
+		<Parameter name="file">world-seas-polygons/water_polygons</Parameter>
 	</Datasource>
 </Layer>
   <Layer name="leisure" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
