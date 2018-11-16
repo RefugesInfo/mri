@@ -2912,21 +2912,9 @@
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <LineSymbolizer stroke="purple" stroke-width="6" stroke-opacity="0.1"/></Rule>
     <Rule>
-      <Filter>[admin_level]='3'</Filter>
-      <MaxScaleDenominator>1000000</MaxScaleDenominator>
-      <LineSymbolizer stroke="purple" stroke-width="5" stroke-dasharray="4,2" stroke-opacity="0.1"/></Rule>
-    <Rule>
       <Filter>[admin_level]='4'</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <LineSymbolizer stroke="purple" stroke-width="3" stroke-dasharray="4,3" stroke-opacity="0.2"/></Rule>
-    <Rule>
-      <Filter>[admin_level]='5'</Filter>
-      <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <LineSymbolizer stroke="purple" stroke-width="2" stroke-dasharray="6,3,2,3,2,3" stroke-opacity="0.3"/></Rule>
-    <Rule>
-      <Filter>[admin_level]='6'</Filter>
-      <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <LineSymbolizer stroke="purple" stroke-width="2" stroke-dasharray="6,3,2,3" stroke-opacity="0.3"/></Rule>
  </Style>
 
 <Layer name="gdal" status="on">
@@ -3226,7 +3214,7 @@
       <Parameter name="password">ootaephi</Parameter>
       <Parameter name="dbname">gis</Parameter>
       <Parameter name="table">
-      (select way,admin_level from europe_roads where "boundary"='administrative' and admin_level in ('2','4','6') ) as admin</Parameter>
+      (select way,admin_level from europe_roads where "boundary"='administrative' and admin_level in ('2','4') ) as admin</Parameter>
       <Parameter name="estimate_extent">false</Parameter>
       <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
     </Datasource>
