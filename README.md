@@ -5,16 +5,15 @@ Missing external files can be found :
 
 == geotiff files for relief and contours of europe ==
 
-https://maps.refuges.info/mri/DEM-aster
-Put them into the DEM-aster/ directory
+Ask me if you want then and then put them into the DEM-aster/ directory
 
-But of course you can build your own colored & shaded relief
+But of course you can build your own colored or not & shaded or not relief
 
 == water polygons ==
 
-https://maps.refuges.info/mri/world-seas/
-
 Source & more accurte polygons are here :
-http://openstreetmapdata.com/data/water-polygons
+https://osmdata.openstreetmap.de/data/water-polygons.html
 
-Put them into the water-seas/  directory
+The style expect to find a ./water-polygons/water_polygons.shp file
+
+Create the directory or use a symlink to you water polygons storage place
