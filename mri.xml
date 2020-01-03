@@ -6,9 +6,9 @@
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" background-color="transparent" minimum-version="0.7.2">
 
 <Style name="seas">
-	<Rule>
-		<!--<MaxScaleDenominator>600000</MaxScaleDenominator>-->
-		<PolygonSymbolizer fill="#514ad8"/><LineSymbolizer stroke="#514ad8"/></Rule>
+        <Rule>
+               <!--<MaxScaleDenominator>600000</MaxScaleDenominator>-->
+               <PolygonSymbolizer fill="#514ad8"/><LineSymbolizer stroke="#514ad8"/></Rule>
 </Style>
     <!-- Test courbes niveau-->	
     <Style name="contours10">
@@ -503,7 +503,7 @@
       <PolygonSymbolizer fill-opacity="0.4" fill="#c8b084"/></Rule>
     <Rule>
       <Filter>[landuse] = 'forest'</Filter>
-      <MaxScaleDenominator>2000000</MaxScaleDenominator>
+      <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <MinScaleDenominator>50000</MinScaleDenominator>
       <PolygonSymbolizer fill-opacity="0.4" fill="#8dc56c"/></Rule>
     <Rule>
@@ -513,7 +513,7 @@
     </Rule>
     <Rule>
       <Filter>[landuse] = 'farm'</Filter>
-      <MaxScaleDenominator>2000000</MaxScaleDenominator>
+      <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <PolygonSymbolizer fill-opacity="0.4" fill="#ead8bd"/></Rule>
     <Rule>
       <Filter>[landuse] = 'recreation_ground'</Filter>
@@ -574,7 +574,7 @@
       <PolygonSymbolizer fill-opacity="0.4" fill="#ffffc0"/></Rule>
     <Rule>
       <Filter>[landuse] = 'basin'</Filter>
-      <MaxScaleDenominator>5000000</MaxScaleDenominator>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
       <PolygonSymbolizer fill="#b5d0d0"/></Rule>
     <Rule>
       <Filter>[amenity] = 'university' or [amenity] = 'college' or [amenity] = 'school' or [amenity]='hospital'</Filter>
@@ -912,7 +912,7 @@
       <PolygonSymbolizer fill="#b5d0d0"/></Rule>
     <Rule>
       <Filter>[natural] = 'lake' or [natural] = 'water'</Filter>
-      <MaxScaleDenominator>5000000</MaxScaleDenominator>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
       <PolygonSymbolizer fill="#b5d0d0"/></Rule>
     <Rule>
       <Filter>[natural] = 'land'</Filter>
@@ -2440,16 +2440,10 @@
 </Style>
   <Style name="roads">
     <!-- MOTORWAY-->
-    <!-- level 4-5 -->
+    <!-- level 7-8 -->
     <Rule>
       <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
-      <MaxScaleDenominator>25000000</MaxScaleDenominator>
-      <MinScaleDenominator>5000000</MinScaleDenominator>
-      <LineSymbolizer stroke="#809bc0" stroke-width="1"/></Rule>
-    <!-- level 6-8 -->
-    <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
-      <MaxScaleDenominator>5000000</MaxScaleDenominator>
+      <MaxScaleDenominator>3000000</MaxScaleDenominator>
       <MinScaleDenominator>1000000</MinScaleDenominator>
       <LineSymbolizer stroke="#809bc0" stroke-width="1.5"/></Rule>
     <!-- level 9 -->
@@ -2465,16 +2459,10 @@
       <LineSymbolizer stroke="#809bc0" stroke-width="2.5"/></Rule>
 
     <!-- TRUNK -->
-    <!--level 4-6-->
+    <!-- level 9 -->
     <Rule>
       <Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-      <MaxScaleDenominator>25000000</MaxScaleDenominator>
-      <MinScaleDenominator>2000000</MinScaleDenominator>
-      <LineSymbolizer stroke="#a9dba9" stroke-width="1"/></Rule>
-    <!-- level 7-9 -->
-    <Rule>
-      <Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-      <MaxScaleDenominator>2000000</MaxScaleDenominator>
+      <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <LineSymbolizer stroke="#a9dba9" stroke-width="1.7"/></Rule>
     <!-- level 10-->
@@ -2485,16 +2473,10 @@
       <LineSymbolizer stroke="#a9dba9" stroke-width="2.5"/></Rule>
 
    <!-- PRIMARY-->
-   <!-- level 5-6-->
-   <Rule>
-      <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-      <MaxScaleDenominator>5000000</MaxScaleDenominator>
-      <MinScaleDenominator>2000000</MinScaleDenominator>
-      <LineSymbolizer stroke="#ec989a" stroke-width="0.7"/></Rule>
-    <!-- level 7-9-->
+    <!-- level 9-->
     <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-      <MaxScaleDenominator>2000000</MaxScaleDenominator>
+      <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <LineSymbolizer stroke="#ec989a" stroke-width="1.6"/></Rule>
     <!-- level 10 -->
@@ -2505,10 +2487,10 @@
       <LineSymbolizer stroke="#ec989a" stroke-width="2.5"/></Rule>
 
     <!-- SECONDARY -->
-    <!-- level 7-9 -->
+    <!-- level 9-11? -->
     <Rule>
       <Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-      <MaxScaleDenominator>2000000</MaxScaleDenominator>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <LineSymbolizer stroke="#fecc8b" stroke-width="1"/></Rule>
     <Rule>
@@ -2519,17 +2501,17 @@
 
     <!-- RAIL -->
         <Rule>
-      <MaxScaleDenominator>2500000</MaxScaleDenominator>
+      <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <MinScaleDenominator>1000000</MinScaleDenominator>
       <Filter>[railway] = 'rail' and not ([tunnel] = 'yes' or [tunnel] = 'true' or [tunnel] = '1')</Filter>
        <LineSymbolizer stroke="#aaa" stroke-width="1"/></Rule>
     <Rule>
-      <MaxScaleDenominator>2500000</MaxScaleDenominator>
+      <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <MinScaleDenominator>1000000</MinScaleDenominator>
       <Filter>[railway] = 'rail' and ([tunnel] = 'yes' or [tunnel] = 'true' or [tunnel] = '1')</Filter>
        <LineSymbolizer stroke="#aaa" stroke-width="1" stroke-dasharray="5,2"/></Rule>
     <Rule>
-      <MaxScaleDenominator>2500000</MaxScaleDenominator>
+      <MaxScaleDenominator>1500000</MaxScaleDenominator>
       <MinScaleDenominator>1000000</MinScaleDenominator>
       <Filter>[railway] = 'tram' or [railway] = 'light_rail' or [railway] = 'narrow_gauge'</Filter>
        <LineSymbolizer stroke="#ccc" stroke-width="1"/></Rule>
@@ -2904,7 +2886,7 @@
 <Style name="admin">
    <Rule>
       <Filter>[admin_level]='2' or [admin_level]='3'</Filter>
-      <MaxScaleDenominator>25000000</MaxScaleDenominator>
+      <MaxScaleDenominator>12500000</MaxScaleDenominator>
       <MinScaleDenominator>5000000</MinScaleDenominator>
       <LineSymbolizer stroke="purple" stroke-width="1" stroke-opacity="0.2"/></Rule>
    <Rule>
@@ -2953,13 +2935,6 @@
             &postgis-settings;
 		    <Parameter name="table">(select way,height from courbesniveaux WHERE height::integer % 100 = 0) as "contours-100"</Parameter>
 	    </Datasource>
-</Layer>
-<Layer name="seas" status="on">
-	<StyleName>seas</StyleName>
-	<Datasource>
-		<Parameter name="type">shape</Parameter>
-		<Parameter name="file">water-polygons/water_polygons</Parameter>
-	</Datasource>
 </Layer>
   <Layer name="leisure" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>leisure</StyleName>
