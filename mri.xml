@@ -2914,6 +2914,34 @@
  </Datasource>
 </Layer>
 
+<Style name="seas">
+       <Rule>
+        <MaxScaleDenominator>5000000</MaxScaleDenominator>
+               <PolygonSymbolizer fill="#514ad8"/>
+    </Rule>
+</Style>
+<Layer name="seas" status="on">
+        <StyleName>seas</StyleName>
+        <Datasource>
+                <Parameter name="type">shape</Parameter>
+                <Parameter name="file">water-polygons/water_polygons</Parameter>
+        </Datasource>
+</Layer>
+
+<Style name="seas-simplified">
+       <Rule>
+        <MinScaleDenominator>5000000</MinScaleDenominator>
+               <PolygonSymbolizer fill="#514ad8"/>
+    </Rule>
+</Style>
+<Layer name="seas-simplified" status="on">
+       <StyleName>seas-simplified</StyleName>
+       <Datasource>
+               <Parameter name="type">shape</Parameter>
+               <Parameter name="file">simplified-water-polygons/simplified_water_polygons</Parameter>
+       </Datasource>
+</Layer>
+
     <Layer name="srtm_10" status="on" srs="+proj=latlong +datum=WGS84">
 	    <StyleName>contours10</StyleName>
 	    <Datasource>
