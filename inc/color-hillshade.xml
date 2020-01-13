@@ -1,0 +1,97 @@
+<!-- Hillshaded maps, from zoom 1 to 9 merged with colored one, for zoom 10 and more, hillshades only -->
+<Style name="hillshade_d64">
+	<Rule>
+		&maxscale_zoom1;
+		&minscale_zoom5;
+		<RasterSymbolizer comp-op="grain-merge" opacity="0.9" scaling="bilinear" />
+	</Rule>
+</Style>
+<Layer name="hillshade_d64">
+	<StyleName>hillshade_d64</StyleName>
+	<Datasource>
+		<Parameter name="type">gdal</Parameter>
+		<Parameter name="file">hillshade-tiff/hillshade_d64.tif</Parameter>
+		<Parameter name="format">tiff</Parameter>
+	</Datasource>
+</Layer>
+
+<Style name="hillshade_d8">
+	<Rule>
+		&maxscale_zoom6;
+		&minscale_zoom9;
+		<RasterSymbolizer comp-op="grain-merge" opacity="0.9" scaling="bilinear" />
+	</Rule>
+</Style>
+<Layer name="hillshade_d8">
+	<StyleName>hillshade_d8</StyleName>
+	<Datasource>
+		<Parameter name="type">gdal</Parameter>
+		<Parameter name="file">hillshade-tiff/hillshade_d8.tif</Parameter>
+		<Parameter name="format">tiff</Parameter>
+	</Datasource>
+</Layer>
+
+<Style name="hillshade_d2">
+	<Rule>
+		&maxscale_zoom10;
+		&minscale_zoom12;
+		<RasterSymbolizer comp-op="grain-merge" opacity="0.5" scaling="bilinear" />
+	</Rule>
+</Style>
+<Layer name="hillshade_d2">
+	<StyleName>hillshade_d2</StyleName>
+	<Datasource>
+		<Parameter name="type">gdal</Parameter>
+		<Parameter name="file">hillshade-tiff/hillshade_d2.tif</Parameter>
+		<Parameter name="format">tiff</Parameter>
+	</Datasource>
+</Layer>
+
+<Style name="hillshade_full">
+	<Rule>
+		&maxscale_zoom13;
+		&minscale_zoom16;
+		<RasterSymbolizer comp-op="grain-merge" opacity="0.4" scaling="bilinear" />
+	</Rule>
+</Style>
+<Layer name="hillshade_full">
+	<StyleName>hillshade_full</StyleName>
+	<Datasource>
+		<Parameter name="type">gdal</Parameter>
+		<Parameter name="file">dem/hs.tif</Parameter>
+		<Parameter name="format">tiff</Parameter>
+	</Datasource>
+</Layer>
+
+<!-- Relief maps, colored by altitude (at zomm 10 and more, not shown anymore -->
+<Style name="relief-5000">
+	<Rule>
+		&maxscale_zoom1;
+		&minscale_zoom5;
+		<RasterSymbolizer opacity="0.8" scaling="bilinear" />
+	</Rule>
+</Style>
+<Layer name="relief-5000">
+	<StyleName>relief-5000</StyleName>
+	<Datasource>
+		<Parameter name="type">gdal</Parameter>
+		<Parameter name="file">dem/color-relief.tif</Parameter>
+		<Parameter name="format">tiff</Parameter>
+	</Datasource>
+</Layer>
+
+<Style name="relief-500">
+	<Rule>
+		&maxscale_zoom6;
+		&minscale_zoom15;
+		<RasterSymbolizer opacity="0.8" scaling="bilinear" />
+	</Rule>
+</Style>
+<Layer name="relief-500">
+	<StyleName>relief-500</StyleName>
+	<Datasource>
+		<Parameter name="type">gdal</Parameter>
+		<Parameter name="file">dem/color-relief.tif</Parameter>
+		<Parameter name="format">tiff</Parameter>
+	</Datasource>
+</Layer>
