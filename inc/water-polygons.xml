@@ -1,0 +1,27 @@
+<Style name="water_polygons">
+    <Rule>
+        &maxscale_zoom12;
+        <PolygonSymbolizer fill="#514ad8"/>
+    </Rule>
+</Style>
+<Layer name="water_polygons" status="on">
+    <StyleName>water_polygons</StyleName>
+    <Datasource>
+            <Parameter name="type">shape</Parameter>
+            <Parameter name="file">water-polygons/water_polygons</Parameter>
+    </Datasource>
+</Layer>
+
+<Style name="simplified_water_polygons">
+    <Rule>
+        &minscale_zoom14;
+        <PolygonSymbolizer fill="#514ad8"/>
+    </Rule>
+</Style>
+<Layer name="simplified_water_polygons" status="on">
+    <StyleName>simplified_water_polygons</StyleName>
+    <Datasource>
+        <Parameter name="type">shape</Parameter>
+        <Parameter name="file">simplified-water-polygons/simplified_water_polygons</Parameter>
+    </Datasource>
+</Layer>
