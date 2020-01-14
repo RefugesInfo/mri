@@ -2870,7 +2870,7 @@
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <LineSymbolizer stroke="purple" stroke-width="3" stroke-dasharray="4,3" stroke-opacity="0.2"/></Rule>
  </Style>
-
+&color-hillshade;
 &water-polygons;
 
     <Layer name="srtm_10" status="on" srs="+proj=latlong +datum=WGS84">
