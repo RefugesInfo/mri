@@ -50,7 +50,7 @@
 <Style name="hillshade_full">
 	<Rule>
 		&maxscale_zoom13;
-		&minscale_zoom16;
+		&minscale_zoom18;
 		<RasterSymbolizer comp-op="grain-merge" opacity="0.4" scaling="bilinear" />
 	</Rule>
 </Style>
@@ -58,7 +58,7 @@
 	<StyleName>hillshade_full</StyleName>
 	<Datasource>
 		<Parameter name="type">gdal</Parameter>
-		<Parameter name="file">dem/hs.tif</Parameter>
+		<Parameter name="file">hillshade-tiff/hillshade.tif</Parameter>
 		<Parameter name="format">tiff</Parameter>
 	</Datasource>
 </Layer>
@@ -83,7 +83,7 @@
 <Style name="relief-500">
 	<Rule>
 		&maxscale_zoom6;
-		&minscale_zoom15;
+		&minscale_zoom8;
 		<RasterSymbolizer opacity="0.8" scaling="bilinear" />
 	</Rule>
 </Style>
