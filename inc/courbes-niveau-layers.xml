@@ -1,28 +1,22 @@
-<Layer name="srtm_10" status="on">
+<Layer name="srtm_10">
 	<StyleName>contours10</StyleName>
 	<Datasource>
-	<Parameter name="type">postgis</Parameter>
-		<Parameter name="dbname">gis</Parameter>
-		<Parameter name="estimate_extent">false</Parameter>
-		<Parameter name="table">(select geom,height::integer from test WHERE height::integer % 10 = 0 AND height::integer % 50 != 0 AND height::integer % 100 != 0) as "contours-10"</Parameter>
+      &postgis-settings;
+      <Parameter name="table">(select geom,height::integer from contours WHERE height::integer % 10 = 0 AND height::integer % 50 != 0 AND height::integer % 100 != 0) as "contours-10"</Parameter>
 	</Datasource>
 </Layer>
-<Layer name="srtm_50" status="on">
+<Layer name="srtm_50">
 	<StyleName>contours50</StyleName>
 	<Datasource>
-	<Parameter name="type">postgis</Parameter>
-		<Parameter name="dbname">gis</Parameter>
-		<Parameter name="estimate_extent">false</Parameter>
-		<Parameter name="table">(select geom,height::integer from test WHERE height::integer % 50 = 0 AND height::integer % 100 != 0) as "contours-50"</Parameter>
+      &postgis-settings;
+      <Parameter name="table">(select geom,height::integer from contours WHERE height::integer % 50 = 0 AND height::integer % 100 != 0) as "contours-50"</Parameter>
 	</Datasource>
 </Layer>
-<Layer name="srtm_100" status="on">
+<Layer name="srtm_100">
 	<StyleName>contours100</StyleName>
 	<StyleName>contours-text100</StyleName>
 	<Datasource>
-	<Parameter name="type">postgis</Parameter>
-		<Parameter name="dbname">gis</Parameter>
-		<Parameter name="estimate_extent">false</Parameter>
-		<Parameter name="table">(select geom,height::integer from test WHERE height::integer % 100 = 0) as "contours-100"</Parameter>
+      &postgis-settings;
+      <Parameter name="table">(select geom,height::integer from contours WHERE height::integer % 100 = 0) as "contours-100"</Parameter>
 	</Datasource>
 </Layer>
