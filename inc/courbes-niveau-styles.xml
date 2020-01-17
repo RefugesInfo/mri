@@ -29,18 +29,18 @@
         <Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
-                <TextSymbolizer face-name="DejaVu Sans Bold" fill="#9F7B74" halo-radius="0.5" opacity="0.9" placement="line" size="8.5">[height]</TextSymbolizer>
+                <TextSymbolizer fontset-name="sans-condensed-bold" fill="#9F7B74" halo-radius="0.5" opacity="0.9" placement="line" size="8.5">[height]</TextSymbolizer>
         </Rule>
 </Style>
 <Style name="contours-text100">
         <Rule>
 		&maxscale_zoom12;
 		&minscale_zoom13;
-                <TextSymbolizer face-name="DejaVu Sans Bold" fill="#9F7B74" halo-radius="0.5" opacity="0.9" spacing="500" placement="line" size="8.5">[height]</TextSymbolizer>
+                <TextSymbolizer fontset-name="sans-condensed-bold" fill="#9F7B74" halo-radius="0.5" opacity="0.9" spacing="500" placement="line" size="8.5">[height]</TextSymbolizer>
         </Rule>
         <Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
-                <TextSymbolizer face-name="DejaVu Sans Bold" fill="#9F7B74" halo-radius="0.5" opacity="0.9" spacing="300" placement="line" size="8.5">[height]</TextSymbolizer>
+                <TextSymbolizer fontset-name="sans-condensed-bold" fill="#9F7B74" halo-radius="0.5" opacity="0.9" spacing="300" placement="line" size="8.5">[height]</TextSymbolizer>
         </Rule>
 </Style>
