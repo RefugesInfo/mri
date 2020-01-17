@@ -6,14 +6,12 @@
     <!ENTITY color-hillshade SYSTEM "inc/color-hillshade.xml">
     <!ENTITY water-polygons SYSTEM "inc/water-polygons.xml">
     <!ENTITY % zoom-levels SYSTEM "inc/zoom-levels.xml">
-    <!ENTITY courbes-niveau-layers SYSTEM "inc/courbes-niveau-layers.xml">
-    <!ENTITY courbes-niveau-styles SYSTEM "inc/courbes-niveau-styles.xml">
+    <!ENTITY courbes-niveau SYSTEM "inc/courbes-niveau.xml">
     %zoom-levels;
 ]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" background-color="transparent">
 
 &fontset-settings;
-&courbes-niveau-styles;
 
   <Style name="places">
     <Rule>
@@ -326,7 +324,7 @@
       <Filter>[landuse] = 'quarry'</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <PolygonPatternSymbolizer file="symbols/quarry2.png"/>
-      <LineSymbolizer stroke="grey" fill-opacity="0.7" stroke-width="0.5"/></Rule>
+      <LineSymbolizer stroke="grey" stroke-width="0.5"/></Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
@@ -336,12 +334,12 @@
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
-      <PolygonPatternSymbolizer fill-opacity="0.5" file="symbols/vineyard.png"/>
+      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
     </Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer fill-opacity="0.5" file="symbols/vineyard.png"/>
+      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
@@ -2829,7 +2827,6 @@
  </Style>
 &water-polygons;
 &color-hillshade;
-&courbes-niveau-layers;
   <Layer name="leisure">
     <StyleName>leisure</StyleName>
     <Datasource>
@@ -2837,6 +2834,8 @@
       <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as leisure</Parameter>
     </Datasource>
   </Layer>
+&courbes-niveau;
+  
   <Layer name="water_areas">
     <StyleName>water_areas</StyleName>
     <Datasource>
