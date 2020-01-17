@@ -84,26 +84,22 @@
       <MinScaleDenominator>500000</MinScaleDenominator>
       <Filter>[aeroway]='airport'</Filter>
       <PointSymbolizer file="symbols/airport.p.16.png"/>
-      <TextSymbolizer size="9" fill="#6692da" dy="-12" fontset-name="sans-condensed-bold" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[aeroway]='airport'</Filter>
-      <TextSymbolizer size="9" fill="#6692da" fontset-name="sans-condensed-bold" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <Filter>[aeroway]='aerodrome'</Filter>
       <PointSymbolizer file="symbols/aerodrome.p.16.png"/>
-      <TextSymbolizer size="9" fill="#6692da" dy="-12" fontset-name="sans-oblique" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[aeroway]='aerodrome'</Filter>
-      <TextSymbolizer size="9" fill="#6692da" fontset-name="sans-oblique" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>

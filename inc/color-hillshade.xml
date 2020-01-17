@@ -2,7 +2,7 @@
 <Style name="hillshade_d2">
 	<Rule>
 		&maxscale_zoom10;
-		&minscale_zoom12;
+		&minscale_zoom14;
 		<RasterSymbolizer opacity="0.7" scaling="bilinear" />
 	</Rule>
 </Style>
@@ -17,7 +17,7 @@
 
 <Style name="hillshade_full">
 	<Rule>
-		&maxscale_zoom13;
+		&maxscale_zoom15;
 		&minscale_zoom17;
 		<RasterSymbolizer opacity="0.7" scaling="bilinear" />
 	</Rule>
