@@ -44,3 +44,25 @@
                 <TextSymbolizer fontset-name="sans-condensed-bold" fill="#9F7B74" halo-radius="0.5" opacity="0.9" spacing="300" placement="line" size="8.5">[height]</TextSymbolizer>
         </Rule>
 </Style>
+<Layer name="contours10">
+	<StyleName>contours10</StyleName>
+	<Datasource>
+      &postgis-settings;
+      <Parameter name="table">(select geom,height::integer from contours WHERE height::integer % 10 = 0 AND height::integer % 50 != 0 AND height::integer % 100 != 0) as "contours-10"</Parameter>
+	</Datasource>
+</Layer>
+<Layer name="contours50">
+	<StyleName>contours50</StyleName>
+	<Datasource>
+      &postgis-settings;
+      <Parameter name="table">(select geom,height::integer from contours WHERE height::integer % 50 = 0 AND height::integer % 100 != 0) as "contours-50"</Parameter>
+	</Datasource>
+</Layer>
+<Layer name="contours100">
+	<StyleName>contours100</StyleName>
+	<StyleName>contours-text100</StyleName>
+	<Datasource>
+      &postgis-settings;
+      <Parameter name="table">(select geom,height::integer from contours WHERE height::integer % 100 = 0) as "contours-100"</Parameter>
+	</Datasource>
+</Layer>
