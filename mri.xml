@@ -10,7 +10,7 @@
     <!ENTITY courbes-niveau-styles SYSTEM "inc/courbes-niveau-styles.xml">
     %zoom-levels;
 ]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" background-color="transparent" minimum-version="0.7.2">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" background-color="transparent">
 
 &fontset-settings;
 &courbes-niveau-styles;
@@ -2829,28 +2829,28 @@
  </Style>
 &water-polygons;
 &courbes-niveaux-layers;
-  <Layer name="leisure" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="leisure">
     <StyleName>leisure</StyleName>
     <Datasource>
       &postgis-settings;
       <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as leisure</Parameter>
     </Datasource>
   </Layer>
-  <Layer name="water_areas" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="water_areas">
     <StyleName>water_areas</StyleName>
     <Datasource>
       &postgis-settings;
       <Parameter name="table">(select * from planet_osm_polygon where waterway IS NOT NULL or landuse='reservoir' or landuse='water' or  "natural"='lake' or "natural"='water' or "natural"='land' order by z_order) as water_areas</Parameter>
     </Datasource>
   </Layer>
-  <Layer name="water_lines" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="water_lines">
     <StyleName>water_lines</StyleName>
     <Datasource>
       &postgis-settings;
       <Parameter name="table">(select * from planet_osm_line where waterway IS NOT NULL or "natural" is not null or man_made is not null order by z_order) as water_lines</Parameter>
     </Datasource>
   </Layer>
-  <Layer name="tunnels" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="tunnels">
     <StyleName>tunnels-casing</StyleName>
     <StyleName>tunnels-fill</StyleName>
     <Datasource>
@@ -2860,7 +2860,7 @@
       </Parameter>
     </Datasource>
   </Layer>
-  <Layer name="tracks-notunnel-nobridge" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="tracks-notunnel-nobridge">
     <StyleName>tracks-notunnel-nobridge</StyleName>
     <Datasource>
       &postgis-settings;
@@ -2869,7 +2869,7 @@
       </Parameter>
     </Datasource>
   </Layer>
-  <Layer name="minor-roads" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="minor-roads">
     <StyleName>minor-roads-casing</StyleName>
     <StyleName>minor-roads-fill</StyleName>
     <StyleName>aerialways</StyleName>
@@ -2881,7 +2881,7 @@
     </Datasource>
   </Layer>
 
-  <Layer name="roads" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="roads">
     <StyleName>roads</StyleName>
     <Datasource>
       &postgis-settings;
@@ -2890,14 +2890,14 @@
       </Parameter>
     </Datasource>
    </Layer>
-   <Layer name="waterway-bridges" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+   <Layer name="waterway-bridges">
     <StyleName>waterway-bridges</StyleName>
     <Datasource>
       &postgis-settings;
       <Parameter name="table">(select * from planet_osm_line where waterway IS NOT NULL or landuse='reservoir' or landuse='water' or  "natural"='lake' or "natural"='water' order by z_order) as water</Parameter>
     </Datasource>
    </Layer>
-   <Layer name="bridges" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+   <Layer name="bridges">
     <StyleName>road-bridges-casing</StyleName>
     <StyleName>road-bridges-fill</StyleName>
     <StyleName>noncased-ways-bridges</StyleName>
@@ -2920,7 +2920,7 @@
       </Parameter>
     </Datasource>
    </Layer>
-   <Layer name="trams" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+   <Layer name="trams">
     <StyleName>trams</StyleName>
     <Datasource>
       &postgis-settings;
@@ -2929,7 +2929,7 @@
       </Parameter>
     </Datasource>
    </Layer>
-   <Layer name="amenity" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+   <Layer name="amenity">
     <StyleName>stations</StyleName>    
     <StyleName>symbols</StyleName>
     <StyleName>points</StyleName>
@@ -2938,21 +2938,21 @@
       <Parameter name="table">(select * from planet_osm_point where amenity IS NOT NULL or tourism is NOT NULL or railway is NOT NULL or "natural" is NOT NULL or man_made is NOT NULL or highway is NOT NULL or aeroway is NOT NULL or power_source is NOT NULL) as amenity</Parameter>
     </Datasource>
    </Layer>
-   <Layer name="power" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+   <Layer name="power">
     <StyleName>power</StyleName>
     <Datasource>
       &postgis-settings;      
       <Parameter name="table">(select way from planet_osm_line where "power"='line') as power</Parameter>
     </Datasource>
   </Layer>
-  <Layer name="power_towers" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="power_towers">
      <StyleName>power_towers</StyleName>
     <Datasource>
       &postgis-settings;
       <Parameter name="table">(select way from planet_osm_point where power='tower') as power_towers</Parameter>
     </Datasource>
    </Layer>
-   <Layer name="line features" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+   <Layer name="line features">
      <StyleName>cliffs</StyleName>
      <Datasource>
       &postgis-settings;
@@ -2961,7 +2961,7 @@
       </Parameter>
     </Datasource>
   </Layer>
-   <Layer name="planet roads text osm" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+   <Layer name="planet roads text osm">
      <StyleName>roads-text</StyleName>
      <Datasource>
       &postgis-settings;
@@ -2971,14 +2971,14 @@
     </Datasource>
   </Layer>
 
-  <Layer name="area-text" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="area-text">
     <StyleName>area-text</StyleName>
     <Datasource>
       &postgis-settings;
       <Parameter name="table">(select name,way_area,way,military,tourism,ele from planet_osm_polygon where name is not null and boundary is null order by z_order,way_area desc) as leisure</Parameter>
     </Datasource>
   </Layer>
-  <Layer name="admin" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="admin">
     <StyleName>admin</StyleName>
     <Datasource>
       &postgis-settings;
@@ -2986,7 +2986,7 @@
       (select way,admin_level from planet_osm_roads where "boundary"='administrative' and admin_level in ('2','4') ) as admin</Parameter>
     </Datasource>
   </Layer>
-  <Layer name="protected_area" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="protected_area">
     <StyleName>protected_area</StyleName>
     <Datasource>
       &postgis-settings;
@@ -3000,7 +3000,7 @@
     </Datasource>
   </Layer>
   
-  <Layer name="text" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <Layer name="text">
 	  <StyleName>text</StyleName>
 	  <Datasource>
       &postgis-settings;
