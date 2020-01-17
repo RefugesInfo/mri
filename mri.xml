@@ -321,27 +321,27 @@
     <Rule>
       <Filter>[tourism] = 'attraction'</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
-      <PolygonSymbolizer fill="#f2caea"/></Rule>
+      <PolygonSymbolizer fill-opacity="0.4" fill="#f2caea"/></Rule>
     <Rule>
       <Filter>[landuse] = 'quarry'</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <PolygonPatternSymbolizer file="symbols/quarry2.png"/>
-      <LineSymbolizer stroke="grey" stroke-width="0.5"/></Rule>
+      <LineSymbolizer stroke="grey" fill-opacity="0.7" stroke-width="0.5"/></Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <PolygonSymbolizer fill-opacity="0.4" fill="#abdf96"/></Rule>
+      <PolygonSymbolizer fill-opacity="0.5" fill="#abdf96"/></Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
-      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
+      <PolygonPatternSymbolizer fill-opacity="0.5" file="symbols/vineyard.png"/>
     </Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
+      <PolygonPatternSymbolizer fill-opacity="0.5" file="symbols/vineyard.png"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
@@ -2828,8 +2828,8 @@
       <LineSymbolizer stroke="purple" stroke-width="3" stroke-dasharray="4,3" stroke-opacity="0.2"/></Rule>
  </Style>
 &water-polygons;
-&courbes-niveau-layers;
 &color-hillshade;
+&courbes-niveau-layers;
   <Layer name="leisure">
     <StyleName>leisure</StyleName>
     <Datasource>
