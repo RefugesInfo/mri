@@ -1,0 +1,268 @@
+  <Style name="natural-landuse">
+    <Rule>
+      <Filter>[man_made] = 'pier'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill="#ededed"/><LineSymbolizer stroke="grey" stroke-width="0.3"/></Rule>
+   <Rule>
+      <Filter>[highway] = 'residential' or [highway]='unclassified' or [highway]='service' </Filter>
+      &maxscale_zoom14;
+      <PolygonSymbolizer fill="#fff"/><LineSymbolizer stroke="#999" stroke-width="1"/></Rule>
+   <Rule>
+      <Filter>[highway] = 'pedestrian'</Filter>
+      &maxscale_zoom14;
+      <PolygonSymbolizer fill="#ededed"/><LineSymbolizer stroke="grey" stroke-width="0.5"/></Rule>
+    <Rule>
+      <Filter>[leisure] = 'playground'</Filter>
+      &maxscale_zoom13;
+     <PolygonSymbolizer fill="#ccffff"/><LineSymbolizer stroke="#666" stroke-width="0.3"/></Rule>    
+    <Rule>
+      <Filter>[tourism] = 'attraction'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#f2caea"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'quarry'</Filter>
+      &maxscale_zoom11;
+      <PolygonPatternSymbolizer file="symbols/quarry2.png"/>
+      <LineSymbolizer stroke="grey" stroke-width="0.5"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'vineyard'</Filter>
+      &maxscale_zoom10;
+      &minscale_zoom12;
+      <PolygonSymbolizer fill-opacity="0.5" fill="#abdf96"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'vineyard'</Filter>
+      &maxscale_zoom13;
+      &minscale_zoom15;
+      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = 'vineyard'</Filter>
+      &maxscale_zoom16;
+      <PolygonPatternSymbolizer file="symbols/vineyard.png"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom12;
+      &minscale_zoom15;
+      <Filter>[landuse] = 'cemetery'</Filter>
+      <PolygonSymbolizer fill-opacity="0.4" fill="#aacbaf"/></Rule>
+    <Rule>
+      &maxscale_zoom10;
+      &minscale_zoom19;
+      <Filter>[landuse] = 'residential'</Filter>
+      <PolygonSymbolizer fill-opacity="0.4" fill="#ddd"/></Rule>
+    <Rule>
+      &maxscale_zoom12;
+      &minscale_zoom19;
+      <Filter>[military] = 'barracks'</Filter>
+      <PolygonSymbolizer fill-opacity="0.4" fill="#ff8f8f"/></Rule>
+    <Rule>
+      &maxscale_zoom12;
+      &minscale_zoom19;
+      <Filter>[military] = 'danger_area'</Filter>
+      <PolygonPatternSymbolizer file="symbols/danger.png"/>
+    </Rule>
+     <Rule>
+      &maxscale_zoom14;
+      <Filter>[landuse] = 'cemetery'</Filter>
+      <PolygonPatternSymbolizer file="symbols/grave_yard.png"/>
+    </Rule>
+
+     <Rule>
+      &maxscale_zoom10;
+      <Filter>[landuse] = 'meadow' or [landuse] = 'grass' or [landuse] = 'grassland' or [natural] = 'grassland'</Filter>
+      <PolygonSymbolizer fill-opacity="0.4" fill="#cfeca8"/></Rule>
+     <Rule>
+      &maxscale_zoom10;
+      <Filter>[natural] = 'wetland'</Filter>
+      <PolygonSymbolizer fill-opacity="0.4" fill="#23bfab"/><PolygonPatternSymbolizer file="symbols/marsh.png"/>
+    </Rule>
+     <Rule>
+      &maxscale_zoom10;
+      <Filter>[natural] = 'rock' or [natural] = 'bare_rock' or [natural] = 'cliff'</Filter>
+      <PolygonSymbolizer fill-opacity="0.5" fill="#e0dede"/><PolygonPatternSymbolizer file="symbols/rock.png"/>
+    </Rule>
+     <Rule>
+      &maxscale_zoom10;
+      <Filter>[natural] = 'scree'</Filter>
+      <PolygonSymbolizer fill-opacity="0.5" fill="#e0dede"/><PolygonPatternSymbolizer file="symbols/scree.png"/>
+    </Rule>
+     <Rule>
+      &maxscale_zoom10;
+      <Filter>[natural] = 'heath' or [natural] = 'scrub'</Filter>
+      <PolygonSymbolizer fill-opacity="0.7" fill="#cfeca8"/></Rule>
+
+    <Rule>
+      <Filter>[leisure] = 'park'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#b6fdb6"/></Rule>
+    <Rule>
+      <Filter>[tourism] = 'zoo'</Filter>
+      &maxscale_zoom10;
+      <PolygonPatternSymbolizer file="symbols/zoo.png"/>
+    </Rule>
+    <Rule>
+      <Filter>[leisure] = 'common'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill="#cfeca8"/></Rule>
+    <Rule>
+      <Filter>[leisure] = 'garden'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#cfeca8"/></Rule>
+    <Rule>
+      <Filter>[leisure] = 'golf_course'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#b5e3b5"/></Rule>
+
+    <Rule>
+      <Filter>[landuse] = 'allotments'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#c8b084"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'forest'</Filter>
+      &maxscale_zoom10;
+      &minscale_zoom13;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#8dc56c"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'forest'</Filter>
+      &maxscale_zoom14;
+      <PolygonPatternSymbolizer file="symbols/forest_transparent.png"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = 'recreation_ground'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#cfeca8"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'village_green'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#cfeca8"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'retail'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill="#f1dada"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'industrial'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#dfd1d6"/></Rule>
+    <Rule>
+      <Filter>[power] = 'station'</Filter>
+      &maxscale_zoom12;
+      <PolygonSymbolizer fill="#bbb"/><LineSymbolizer stroke="#555" stroke-width="0.4"/></Rule>
+    <Rule>
+      <Filter>[power] = 'sub_station'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill="#bbb"/><LineSymbolizer stroke="#555" stroke-width="0.4"/></Rule>
+    <Rule>
+      <Filter>[natural] = 'glacier'</Filter>
+      &maxscale_zoom11;
+      <LineSymbolizer stroke="#9cf" stroke-width="1.5" stroke-dasharray="4,2"/><PolygonPatternSymbolizer file="symbols/glacier2.png"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = 'commercial'</Filter>
+      &maxscale_zoom12;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#efc8c8"/></Rule>
+     <Rule>
+      <Filter>[natural] = 'wood' or [landuse] = 'wood'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#aed1a0"/></Rule>
+     <Rule>
+      <Filter>[natural] = 'heath'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill-opacity="0.4" fill="#ffffc0"/></Rule>
+    <Rule>
+      <Filter>[landuse] = 'basin'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill="#b5d0d0"/></Rule>
+    <Rule>
+      <Filter>[amenity] = 'university' or [amenity] = 'college' or [amenity] = 'school' or [amenity]='hospital'</Filter>
+      &maxscale_zoom10;
+      <PolygonSymbolizer fill="#f0f0d8"/></Rule>
+    <Rule>
+      <Filter>[amenity] = 'university' or [amenity] = 'college' or [amenity] = 'school' or [amenity]='hospital'</Filter>
+      &maxscale_zoom12;
+      <LineSymbolizer stroke="brown" stroke-width="0.3"/></Rule>
+    <Rule>
+      <Filter>[amenity] = 'parking'</Filter>
+      &maxscale_zoom15;
+      <LineSymbolizer stroke="#eeeed1" stroke-width="0.3"/></Rule>
+
+    <Rule>
+	    <Filter>[railway] = 'station' or [building] = 'station'</Filter>
+	    &maxscale_zoom14;
+	    <PolygonSymbolizer fill="#d4aaaa"/></Rule>
+    
+    <Rule>
+	    <Filter>[building] = 'supermarket'</Filter>
+	    &maxscale_zoom14;
+	    <PolygonSymbolizer fill-opacity="0.5" fill="pink"/></Rule>
+    <Rule>
+	    <Filter>[building] &lt;&gt; 'station' and [building] &lt;&gt; 'supermarket' and [building] &lt;&gt; ''</Filter>
+	    &maxscale_zoom14;
+	    <PolygonSymbolizer fill="#cc9999"/></Rule>
+
+    <Rule>
+      <Filter>[amenity] = 'place_of_worship'</Filter>
+      &maxscale_zoom14;
+      &minscale_zoom15;
+      <PolygonSymbolizer fill-opacity="0.5" fill="#777"/></Rule>
+    <Rule>
+      <Filter>[amenity] = 'place_of_worship'</Filter>
+      &maxscale_zoom16;
+      <PolygonSymbolizer fill-opacity="0.5" fill="#777"/><LineSymbolizer stroke="#111" stroke-width="0.3"/></Rule>
+     <Rule>
+      <Filter>[leisure] = 'sports_centre' or [leisure]='stadium' or [leisure]='track'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill="#33cc99"/></Rule>
+    <Rule>
+      <Filter>[leisure] = 'pitch'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill="#8ad3af"/></Rule>
+    <Rule>
+      <Filter>[aeroway] = 'terminal'</Filter>
+      &maxscale_zoom12;
+      <PolygonSymbolizer fill="#cc99ff"/></Rule>
+    <Rule>
+      <Filter>[aeroway] = 'terminal'</Filter>
+      &maxscale_zoom14;
+      <LineSymbolizer stroke="#330066" stroke-width="0.2"/></Rule>
+    <Rule>
+      <Filter>[aeroway] = 'apron'</Filter>
+      &maxscale_zoom12;
+      <PolygonSymbolizer fill="#f0e0ff"/></Rule>
+    <Rule>
+      <Filter>[natural] = 'beach'</Filter>
+      &maxscale_zoom13;
+      <PolygonPatternSymbolizer file="symbols/beach.png"/>
+    </Rule>
+    <Rule>
+	    <Filter>[tourism] = 'alpine_hut'</Filter>
+	    &maxscale_zoom11;
+	    <PointSymbolizer file="symbols/alpine_hut.png"/>
+    </Rule>
+    <Rule>
+	    <Filter>[tourism]='wilderness_hut'</Filter>
+	    &maxscale_zoom11;
+	    <PointSymbolizer file="symbols/wilderness_hut.png"/>
+    </Rule>
+    <Rule>
+	    <Filter>[tourism] = 'basic_hut'</Filter>
+	    &maxscale_zoom11;
+	    <PointSymbolizer file="symbols/basic_hut.png"/>
+    </Rule>
+    <Rule>
+	    <Filter>[tourism] = 'lean_to'</Filter>
+	    &maxscale_zoom12;
+	    <PointSymbolizer file="symbols/lean_to.png"/>
+    </Rule>
+    <Rule>
+	    <Filter>[amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to')</Filter>
+	    &maxscale_zoom12;
+	    <PointSymbolizer file="symbols/shelter.png"/>
+    </Rule>
+  </Style>
+  <Layer name="natural-landuse">
+    <StyleName>natural-landuse</StyleName>
+    <Datasource>
+      &postgis-settings;
+      <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as leisure</Parameter>
+    </Datasource>
+  </Layer>
