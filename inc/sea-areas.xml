@@ -8,13 +8,14 @@
     <StyleName>water_polygons</StyleName>
     <Datasource>
             <Parameter name="type">shape</Parameter>
-            <Parameter name="file">mapnik-data/water-polygons/detailed/water_polygons</Parameter>
+            <Parameter name="file">mapnik-data/sea-areas/detailed/water_polygons</Parameter>
     </Datasource>
 </Layer>
 
 <Style name="simplified_water_polygons">
     <Rule>
-        &minscale_zoom14;
+        &maxscale_zoom1;
+        &minscale_zoom13;
         <PolygonSymbolizer fill="#514ad8"/><LineSymbolizer stroke="#514ad8" stroke-width="1"/>
     </Rule>
 </Style>
@@ -22,6 +23,6 @@
     <StyleName>simplified_water_polygons</StyleName>
     <Datasource>
         <Parameter name="type">shape</Parameter>
-        <Parameter name="file">mapnik-data/water-polygons/simplified/simplified_water_polygons</Parameter>
+        <Parameter name="file">mapnik-data/sea-areas/simplified/simplified_water_polygons</Parameter>
     </Datasource>
 </Layer>

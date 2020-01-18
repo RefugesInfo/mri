@@ -4,8 +4,13 @@
       &maxscale_zoom10;
       <PolygonSymbolizer fill="#b5d0d0"/></Rule>
     <Rule>
-      <Filter>[natural] = 'water' and ([way_area] &gt; 5000)</Filter>
+      <Filter>([natural] = 'lake' or [natural] = 'water') and [way_area] &gt; 5000000</Filter>
       &maxscale_zoom9;
+      &minscale_zoom9;
+      <PolygonSymbolizer fill="#b5d0d0"/></Rule>
+    <Rule>
+      <Filter>[natural] = 'lake' or [natural] = 'water'</Filter>
+      &maxscale_zoom10;
       <PolygonSymbolizer fill="#b5d0d0"/></Rule>
   </Style>
 
@@ -13,6 +18,6 @@
     <StyleName>water_areas</StyleName>
     <Datasource>
       &postgis-settings;
-      <Parameter name="table">(select * from planet_osm_polygon where waterway IS NOT NULL or landuse='reservoir' or landuse='water' or  "natural"='lake' or "natural"='water' or order by z_order) as water_areas</Parameter>
+      <Parameter name="table">(select * from planet_osm_polygon where waterway IS NOT NULL or landuse='reservoir' or landuse='water' or  "natural"='lake' or "natural"='water' order by z_order) as water_areas</Parameter>
     </Datasource>
   </Layer>
