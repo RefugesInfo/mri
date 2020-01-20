@@ -14,6 +14,3 @@ But of course you can build your own colored or not & shaded or not relief
 Source & more accurte polygons are here :
 https://osmdata.openstreetmap.de/data/water-polygons.html
 
-The style expect to find a ./water-polygons/water_polygons.shp file
-
-Create the directory or use a symlink to you water polygons storage place
