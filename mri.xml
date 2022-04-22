@@ -11,7 +11,7 @@
   <!ENTITY contours SYSTEM "inc/contours.xml">
   %zoom-levels;
 ]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" background-color="transparent">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" background-color="white">
 
 &fontset-settings;
 
@@ -152,7 +152,7 @@
 	    <PointSymbolizer file="symbols/viewpoint.png"/>
     </Rule>
     <Rule>
-	    &maxscale_zoom13;
+	    &maxscale_zoom14;
 	    <Filter>[tourism]='information'</Filter>
 	    <PointSymbolizer file="symbols/guidepost.png"/>
     </Rule>
@@ -404,7 +404,7 @@
     </Rule>
     <Rule>
       <Filter>[tourism] = 'information'</Filter>
-      &maxscale_zoom13;
+      &maxscale_zoom14;
       <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
