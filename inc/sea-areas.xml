@@ -1,6 +1,6 @@
 <Style name="water_polygons">
     <Rule>
-        &maxscale_zoom12;
+        &maxscale_zoom11;
         <PolygonSymbolizer fill="#514ad8"/>
         <LineSymbolizer stroke="#514ad8" stroke-width="1"/>
     </Rule>
@@ -17,7 +17,7 @@
 <Style name="simplified_water_polygons">
     <Rule>
         &maxscale_zoom1;
-        &minscale_zoom13;
+        &minscale_zoom11;
         <PolygonSymbolizer fill="#514ad8"/>
         <LineSymbolizer stroke="#514ad8" stroke-width="1"/>
     </Rule>
