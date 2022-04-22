@@ -7,7 +7,7 @@ options=""
 #gdal_fillnodata.py $file
 
 #option, réduire taille : -tr 90 90 
-gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs "EPSG:3857" -r bilinear -tr 180 180 $file warp.tif -overwrite
+gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs "EPSG:3857" -r bilinear $file warp.tif -overwrite
 #gdal_fillnodata.py warp.tif
 
 gdaldem hillshade -z 0.7 -compute_edges -co BIGTIFF=YES -co TILED=YES -co COMPRESS=JPEG warp.tif hs.tif
