@@ -1,6 +1,8 @@
 # mri
 The maps.refuges.info mapnik map style base on Openstreetmap
 
+More information at https://wiki.openstreetmap.org/wiki/Hiking/mri
+
 Missing external files can be found :
 
 == geotiff files for relief and contours of europe ==
