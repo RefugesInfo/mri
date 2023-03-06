@@ -239,6 +239,12 @@
 	    <PointSymbolizer file="symbols/alpine_hut.png"/>
     </Rule>
     <Rule>
+      <Filter>[amenity]='parking'</Filter>
+      &maxscale_zoom15;
+      <PointSymbolizer file="symbols/parking.png"/>
+    </Rule>    
+
+    <Rule>
 	    <Filter>[tourism]='wilderness_hut'</Filter>
 	    &maxscale_zoom11;
 	    <PointSymbolizer file="symbols/wilderness_hut.png"/>
