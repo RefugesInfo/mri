@@ -1,4 +1,4 @@
-<Style name="areas-icons-and-texture">
+<Style name="areas-texture">
   <Rule>
     <Filter>[man_made] = 'pier'</Filter>
     &maxscale_zoom13;
@@ -266,42 +266,12 @@
     &maxscale_zoom13;
     <PolygonPatternSymbolizer file="symbols/beach.png"/>
   </Rule>
-  <Rule>
-      <Filter>[tourism] = 'alpine_hut'</Filter>
-      &maxscale_zoom11;
-      <PointSymbolizer file="symbols/alpine_hut.png"/>
-  </Rule>
-  <Rule>
-    <Filter>[amenity]='parking'</Filter>
-    &maxscale_zoom15;
-    <PointSymbolizer file="symbols/parking.png"/>
-  </Rule>
-  <Rule>
-      <Filter>[tourism]='wilderness_hut'</Filter>
-      &maxscale_zoom11;
-      <PointSymbolizer file="symbols/wilderness_hut.png"/>
-  </Rule>
-  <Rule>
-    <Filter>[tourism] = 'basic_hut'</Filter>
-    &maxscale_zoom11;
-    <PointSymbolizer file="symbols/basic_hut.png"/>
-  </Rule>
-  <Rule>
-    <Filter>[tourism] = 'lean_to'</Filter>
-    &maxscale_zoom12;
-    <PointSymbolizer file="symbols/lean_to.png"/>
-  </Rule>
-  <Rule>
-    <Filter>[amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to')</Filter>
-    &maxscale_zoom12;
-    <PointSymbolizer file="symbols/shelter.png"/>
-  </Rule>
 </Style>
-<Layer name="areas-icons-and-texture">
-  <StyleName>areas-icons-and-texture</StyleName>
+<Layer name="areas-texture">
+  <StyleName>areas-texture</StyleName>
   <Datasource>
     &postgis-settings;
-    <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as areasiconsandtexture</Parameter>
+    <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as areastexture</Parameter>
   </Datasource>
 </Layer>
 

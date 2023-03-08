@@ -6,7 +6,8 @@
   <!ENTITY color-hillshade SYSTEM "inc/color-hillshade.xml">
   <!ENTITY sea-areas SYSTEM "inc/sea-areas.xml">
   <!ENTITY water-areas SYSTEM "inc/water-areas.xml">
-  <!ENTITY areas-icons-and-texture SYSTEM "inc/areas-icons-and-texture.xml">
+  <!ENTITY areas-icons SYSTEM "inc/areas-icons.xml">
+  <!ENTITY areas-texture SYSTEM "inc/areas-texture.xml">
   <!ENTITY area-text SYSTEM "inc/area-text.xml">
   <!ENTITY mri-path SYSTEM "inc/mri-path.xml">
   <!ENTITY poi-icons SYSTEM "inc/poi-icons.xml">
@@ -1818,13 +1819,21 @@
  </Style>
 &color-hillshade;
 &sea-areas;
-&areas-icons-and-texture;  
-&area-text;
+&areas-texture;  
 &contours;
 &water-areas;
-&poi-icons;
-&poi-text;
 
+<Layer name="minor-roads">
+    <StyleName>minor-roads-casing</StyleName>
+    <StyleName>minor-roads-fill</StyleName>
+    <StyleName>aerialways</StyleName>
+    <Datasource>
+      &postgis-settings;
+      <Parameter name="table">
+      (select * from planet_osm_line order by z_order) as roads
+      </Parameter>
+    </Datasource>
+  </Layer>
   <Layer name="water_lines">
     <StyleName>water_lines</StyleName>
     <Datasource>
@@ -1851,17 +1860,7 @@
       </Parameter>
     </Datasource>
   </Layer>
-  <Layer name="minor-roads">
-    <StyleName>minor-roads-casing</StyleName>
-    <StyleName>minor-roads-fill</StyleName>
-    <StyleName>aerialways</StyleName>
-    <Datasource>
-      &postgis-settings;
-      <Parameter name="table">
-      (select * from planet_osm_line order by z_order) as roads
-      </Parameter>
-    </Datasource>
-  </Layer>
+
 
   <Layer name="roads">
     <StyleName>roads</StyleName>
@@ -1945,4 +1944,11 @@
       (select way,admin_level from planet_osm_roads where "boundary"='administrative' and admin_level in ('2','4') ) as admin</Parameter>
     </Datasource>
   </Layer>
+
+  <!-- icons and text are over all other layers -->
+&poi-icons;
+&poi-text;
+&areas-icons;  
+&area-text;
+  
 </Map>
