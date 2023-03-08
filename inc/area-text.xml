@@ -1,0 +1,50 @@
+  <Style name="area-text">
+    <Rule>
+      <Filter>[military] = 'danger_area'</Filter>
+      &maxscale_zoom12;
+      <TextSymbolizer size="9" fill="pink" fontset-name="sans-condensed-bold" halo-radius="1" wrap-width="10">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[way_area] &gt;= 150000</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="10" fill="#000033" fontset-name="sans-book" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[way_area] &gt;= 80000 and [way_area] &lt; 150000</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="10" fill="#000033" fontset-name="sans-book" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[way_area] &gt;= 20000 and [way_area] &lt; 80000</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="10" fill="#000033" fontset-name="sans-book" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[way_area] &lt; 20000</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="10" fill="#000033" fontset-name="sans-book" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'lean_to' or [tourism] = 'basic_hut'</Filter>
+	    &maxscale_zoom13;
+	    <TextSymbolizer size="12" fill="brown" dy="15" fontset-name="sans-book" halo-radius="1">[name]</TextSymbolizer>
+    </Rule>    
+    <Rule>
+	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'lean_to' or [tourism] = 'basic_hut'</Filter>
+	    &maxscale_zoom14;
+	    <TextSymbolizer size="12" fill="brown" dy="28" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[amenity] = 'parking'</Filter>
+      &maxscale_zoom15;
+      <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>    
+  </Style>
+  
+  <Layer name="area-text">
+    <StyleName>area-text</StyleName>
+    <Datasource>
+      &postgis-settings;
+      <Parameter name="table">(select name,way_area,way,military,tourism,amenity,ele from planet_osm_polygon where (name is not null or ele is not null) and boundary is null order by z_order,way_area desc) as leisure</Parameter>
+    </Datasource>
+  </Layer>
