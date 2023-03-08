@@ -1,4 +1,4 @@
-<Style name="natural-landuse">
+<Style name="areas-icons-and-texture">
   <Rule>
     <Filter>[man_made] = 'pier'</Filter>
     &maxscale_zoom13;
@@ -297,10 +297,36 @@
     <PointSymbolizer file="symbols/shelter.png"/>
   </Rule>
 </Style>
-<Layer name="natural-landuse">
-  <StyleName>natural-landuse</StyleName>
+<Layer name="areas-icons-and-texture">
+  <StyleName>areas-icons-and-texture</StyleName>
   <Datasource>
     &postgis-settings;
-    <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as leisure</Parameter>
+    <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as areasiconsandtexture</Parameter>
+  </Datasource>
+</Layer>
+
+<Style name="protected_area">
+  <Rule>
+    &maxscale_zoom14;
+    &minscale_zoom19;
+    <LineSymbolizer stroke="#0c740c" stroke-width="4" stroke-opacity="0.6"/><TextSymbolizer size="9" fill="#0c740c" placement="line" minimum-distance="20" fontset-name="sans-book" halo-radius="1">[name]</TextSymbolizer>
+  </Rule>
+  <Rule>
+    &maxscale_zoom11;
+    &minscale_zoom13;
+    <LineSymbolizer stroke="#0c740c" stroke-width="2" stroke-opacity="0.6"/></Rule>
+</Style>
+
+<Layer name="protected_area">
+  <StyleName>protected_area</StyleName>
+  <Datasource>
+    &postgis-settings;
+    <Parameter name="table">
+    (select * from planet_osm_polygon where
+    boundary='national_park' or
+    leisure='nature_reserve' or
+    (boundary='protected_area' and protect_class in ('1' ,'2','3','4') )
+    ) as protected_area
+    </Parameter>
   </Datasource>
 </Layer>
