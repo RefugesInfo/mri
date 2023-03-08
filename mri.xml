@@ -12,6 +12,7 @@
   <!ENTITY mri-path SYSTEM "inc/mri-path.xml">
   <!ENTITY poi-icons SYSTEM "inc/poi-icons.xml">
   <!ENTITY poi-text SYSTEM "inc/poi-text.xml">
+  <!ENTITY administrative-borders SYSTEM "inc/administrative-borders.xml">
   <!ENTITY % zoom-levels SYSTEM "inc/zoom-levels.xml">
   <!ENTITY contours SYSTEM "inc/contours.xml">
   %zoom-levels;
@@ -1797,26 +1798,7 @@
        <LinePatternSymbolizer file="symbols/cliff.png"/>
     </Rule>
   </Style>
-<Style name="admin">
-   <Rule>
-      <Filter>[admin_level]='2' or [admin_level]='3'</Filter>
-      &maxscale_zoom6;
-      &minscale_zoom7;
-      <LineSymbolizer stroke="purple" stroke-width="1" stroke-opacity="0.2"/></Rule>
-   <Rule>
-      <Filter>[admin_level]='2' or [admin_level]='3'</Filter>
-      &maxscale_zoom8;
-      &minscale_zoom10;
-      <LineSymbolizer stroke="purple" stroke-width="2" stroke-opacity="0.2"/></Rule>
-   <Rule>
-      <Filter>[admin_level]='2'</Filter>
-      &maxscale_zoom10;
-      <LineSymbolizer stroke="purple" stroke-width="6" stroke-opacity="0.1"/></Rule>
-    <Rule>
-      <Filter>[admin_level]='4'</Filter>
-      &maxscale_zoom11;
-      <LineSymbolizer stroke="purple" stroke-width="3" stroke-dasharray="4,3" stroke-opacity="0.2"/></Rule>
- </Style>
+
 &color-hillshade;
 &sea-areas;
 &areas-texture;  
@@ -1936,15 +1918,7 @@
       </Parameter>
     </Datasource>
   </Layer>
-  <Layer name="admin">
-    <StyleName>admin</StyleName>
-    <Datasource>
-      &postgis-settings;
-      <Parameter name="table">
-      (select way,admin_level from planet_osm_roads where "boundary"='administrative' and admin_level in ('2','4') ) as admin</Parameter>
-    </Datasource>
-  </Layer>
-
+&administrative-borders;
   <!-- icons and text are over all other layers -->
 &poi-icons;
 &poi-text;
