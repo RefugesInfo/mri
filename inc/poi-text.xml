@@ -1,0 +1,193 @@
+  <Style name="text">
+    <Rule>
+      <Filter>[place] = 'island'</Filter>
+      &maxscale_zoom10;
+      &minscale_zoom15;
+      <TextSymbolizer size="9" fill="#000" dy="0" fontset-name="sans-oblique" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'city'</Filter>
+      &maxscale_zoom7;
+      &minscale_zoom8;
+      <TextSymbolizer size="10" fill="#000" dy="0" fontset-name="sans-book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'city'</Filter>
+      &maxscale_zoom9;
+      &minscale_zoom15;
+      <TextSymbolizer size="14" fill="#000" dy="0" fontset-name="sans-book" halo-radius="2" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'town'</Filter>
+      &maxscale_zoom9;
+      &minscale_zoom13;
+      <TextSymbolizer size="11" fill="#000" fontset-name="sans-book" halo-radius="2" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'town'</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="14" fill="#777777" fontset-name="sans-book" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'suburb'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom13;
+      <TextSymbolizer size="10" fill="#000" fontset-name="sans-book" halo-radius="2" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'suburb'</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="13" fill="#777777" fontset-name="sans-book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'village'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom15;
+      <TextSymbolizer size="9" fill="#000" fontset-name="sans-book" halo-radius="2" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'village'</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="12" fill="#777777" fontset-name="sans-book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'hamlet' or [place] = 'locality' or [place] ='isolated_dwelling'</Filter>
+      &maxscale_zoom13;
+      &minscale_zoom16;
+      <TextSymbolizer size="10" fill="#000" fontset-name="sans-book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      <TextSymbolizer size="10" fill="#000" dy="10" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'hamlet' or [place] = 'locality' or [place]='isolated_dwelling'</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="11" fill="#777777" fontset-name="sans-book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      <TextSymbolizer size="11" fill="#777777" dy="10" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism] = 'information'</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[amenity] = 'pub' or [amenity]='restaurant' or [amenity]='cafe' or [amenity]='bar'</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="10" fill="#734a08" dy="14" fontset-name="sans-condensed-bold" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+     <Rule>
+      <Filter>[amenity] = 'place_of_worship' or [amenity] = 'police'</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="10" fill="#000033" dy="16" fontset-name="sans-book" halo-radius="1" wrap-width="30">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[leisure] &lt;&gt; '' or [landuse] &lt;&gt; '' </Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="10" fill="#000" fontset-name="sans-book" halo-radius="2" wrap-width="10">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[natural] = 'wood'</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="10" fill="#000" fontset-name="sans-book" halo-radius="2" wrap-width="10">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[natural] = 'peak'</Filter>
+      &maxscale_zoom13;
+      <TextSymbolizer size="11" fill="brown" dy="12" fontset-name="sans-book" halo-radius="1">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[natural] = 'peak'</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="10" fill="brown" dy="23" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism] = 'alpine_hut'</Filter>
+      &maxscale_zoom13;
+      <TextSymbolizer size="12" fill="brown" dy="15" fontset-name="sans-book" halo-radius="1">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism] = 'alpine_hut'</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="12" fill="brown" dy="25" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism] = 'wilderness_hut' or [tourism] = 'basic_hut' or ([amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to'))</Filter>
+      &maxscale_zoom13;
+      <TextSymbolizer size="11" fill="brown" dy="15" fontset-name="sans-book" halo-radius="1">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+	    <Filter>[tourism] = 'wilderness_hut' or [tourism] = 'basic_hut' or ([amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to'))</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="11" fill="brown" dy="25" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mountain_pass] = 'yes'</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer size="11" fill="brown" dy="12" fontset-name="sans-book" halo-radius="1">[name]</TextSymbolizer>
+      <TextSymbolizer size="9" fill="brown" dy="25" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism] = 'viewpoint' or [natural]='spring'</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="9" fill="brown" dy="22" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[amenity] = 'parking'</Filter>
+      &maxscale_zoom15;
+      <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+    </Rule>    
+    <Rule>
+	    <Filter>[natural] = 'water' or [natural] = 'lake' or [landuse] = 'reservoir' or [landuse] = 'basin'</Filter>
+	    &maxscale_zoom16;
+	    <TextSymbolizer size="10" fill="#6699cc" fontset-name="sans-book" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism] = 'hotel'</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="10" fill="#0092da" dy="16" fontset-name="sans-book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism]='museum'</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="10" fill="#734a08" dy="16" fontset-name="sans-book" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[tourism] = 'attraction'</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="10" fill="#660033" fontset-name="sans-book" halo-radius="2" wrap-width="10">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[amenity] = 'school' or [amenity] = 'college' or [amenity] = 'university'</Filter>
+      &maxscale_zoom15;
+      <TextSymbolizer size="9" fill="#000033" fontset-name="sans-book" halo-radius="2" wrap-width="12">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[amenity] = 'hospital'</Filter>
+      &maxscale_zoom15;
+      <TextSymbolizer size="9" fill="#da0092" dy="12" fontset-name="sans-book" halo-radius="2" wrap-width="12">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[highway] = 'motorway_junction'</Filter>
+      &maxscale_zoom11;
+      &minscale_zoom11;
+      <TextSymbolizer size="9" fill="#6666ff" minimum-distance="20" fontset-name="sans-book" halo-radius="1" wrap-width="12">[ref]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[highway] = 'motorway_junction'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom15;
+      <TextSymbolizer size="9" fill="#6666ff" minimum-distance="20" fontset-name="sans-book" halo-radius="1" wrap-width="12">[ref]</TextSymbolizer>
+      <TextSymbolizer size="9" fill="#6666ff" dy="-8" minimum-distance="20" fontset-name="sans-book" halo-radius="1" wrap-width="12">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[highway] = 'motorway_junction'</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="13" fill="#6666ff" minimum-distance="20" fontset-name="sans-book" halo-radius="1" wrap-width="12">[ref]</TextSymbolizer>
+      <TextSymbolizer size="14" fill="#6666ff" dy="-14" minimum-distance="20" fontset-name="sans-book" halo-radius="1" wrap-width="12">[name]</TextSymbolizer>
+    </Rule>
+</Style>
+<Layer name="text">
+    <StyleName>text</StyleName>
+    <Datasource>
+    &postgis-settings;
+        <Parameter name="table">planet_osm_point</Parameter>
+    </Datasource>
+</Layer>  
