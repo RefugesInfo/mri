@@ -1920,9 +1920,9 @@
   </Layer>
 &administrative-borders;
   <!-- icons and text are over all other layers -->
-&poi-icons;
-&poi-text;
 &areas-icons;  
 &area-text;
+&poi-icons;
+&poi-text;
   
 </Map>

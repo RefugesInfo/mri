@@ -122,12 +122,17 @@
 		<PointSymbolizer file="symbols/shelter.png"/>
 	</Rule>
     <Rule>
-	    &maxscale_zoom16;
+	    &maxscale_zoom15;
+	    <Filter>[historic]='wayside_cross'</Filter>
+	    <PointSymbolizer file="symbols/cross.png"/>
+    </Rule>
+    <Rule>
+	    &maxscale_zoom15;
 	    <Filter>[tourism]='viewpoint'</Filter>
 	    <PointSymbolizer file="symbols/viewpoint.png"/>
     </Rule>
     <Rule>
-	    &maxscale_zoom14;
+	    &maxscale_zoom16;
 	    <Filter>[tourism]='information'</Filter>
 	    <PointSymbolizer file="symbols/guidepost.png"/>
     </Rule>
@@ -265,7 +270,7 @@
   <StyleName>points</StyleName>
   <Datasource>
     &postgis-settings;
-    <Parameter name="table">(select * from planet_osm_point where amenity IS NOT NULL or tourism is NOT NULL or railway is NOT NULL or "natural" is NOT NULL or man_made is NOT NULL or highway is NOT NULL or aeroway is NOT NULL or power_source is NOT NULL) as amenity</Parameter>
+    <Parameter name="table">(select * from planet_osm_point where historic IS NOT NULL or amenity IS NOT NULL or tourism is NOT NULL or railway is NOT NULL or "natural" is NOT NULL or man_made is NOT NULL or highway is NOT NULL or aeroway is NOT NULL or power_source is NOT NULL) as amenity</Parameter>
   </Datasource>
 </Layer>
 
