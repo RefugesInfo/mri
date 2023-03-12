@@ -64,11 +64,6 @@
       <TextSymbolizer size="11" fill="#777777" dy="10" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[tourism] = 'information'</Filter>
-      &maxscale_zoom14;
-      <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
-    </Rule>
-    <Rule>
       <Filter>[amenity] = 'pub' or [amenity]='restaurant' or [amenity]='cafe' or [amenity]='bar'</Filter>
       &maxscale_zoom17;
       <TextSymbolizer size="10" fill="#734a08" dy="14" fontset-name="sans-condensed-bold" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
@@ -125,15 +120,16 @@
       <TextSymbolizer size="9" fill="brown" dy="25" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[tourism] = 'viewpoint' or [natural]='spring'</Filter>
+      <Filter>[tourism] = 'viewpoint' or [natural]='spring' or [amenity] = 'parking' or [tourism] = 'information'</Filter>
       &maxscale_zoom16;
-      <TextSymbolizer size="9" fill="brown" dy="22" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+      <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[amenity] = 'parking'</Filter>
+      <Filter>[historic] = 'wayside_cross'</Filter>
       &maxscale_zoom15;
-      <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
-    </Rule>    
+      <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[name]</TextSymbolizer>
+    </Rule>
+
     <Rule>
 	    <Filter>[natural] = 'water' or [natural] = 'lake' or [landuse] = 'reservoir' or [landuse] = 'basin'</Filter>
 	    &maxscale_zoom16;
