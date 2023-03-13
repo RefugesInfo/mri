@@ -25,12 +25,7 @@
     <PointSymbolizer file="symbols/basic_hut.png"/>
   </Rule>
   <Rule>
-    <Filter>[tourism] = 'lean_to'</Filter>
-    &maxscale_zoom12;
-    <PointSymbolizer file="symbols/lean_to.png"/>
-  </Rule>
-  <Rule>
-    <Filter>[amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut' or [shelter_type] = 'lean_to')</Filter>
+    <Filter>[amenity] = 'shelter' and ([shelter_type] = '' or [shelter_type] = 'weather_shelter' or [shelter_type] = 'basic_hut')</Filter>
     &maxscale_zoom12;
     <PointSymbolizer file="symbols/shelter.png"/>
   </Rule>
