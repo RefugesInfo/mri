@@ -10,11 +10,6 @@
       <PointSymbolizer file="symbols/alpine_hut.png"/>
   </Rule>
   <Rule>
-    <Filter>[amenity]='parking'</Filter>
-    &maxscale_zoom15;
-    <PointSymbolizer file="symbols/parking.png"/>
-  </Rule>
-  <Rule>
       <Filter>[tourism]='wilderness_hut'</Filter>
       &maxscale_zoom11;
       <PointSymbolizer file="symbols/wilderness_hut.png"/>
@@ -30,8 +25,16 @@
     <PointSymbolizer file="symbols/shelter.png"/>
   </Rule>
 </Style>
+<Style name="areas-icons-lower-importance">
+  <Rule>
+    <Filter>[amenity]='parking'</Filter>
+    &maxscale_zoom15;
+    <PointSymbolizer file="symbols/parking.png"/>
+  </Rule>
+</Style>
 <Layer name="areas-icons">
   <StyleName>areas-icons</StyleName>
+  <StyleName>areas-icons-lower-importance</StyleName>
   <Datasource>
     &postgis-settings;
     <Parameter name="table">(select * from planet_osm_polygon order by z_order,way_area desc) as areasicons</Parameter>
