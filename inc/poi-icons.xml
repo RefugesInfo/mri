@@ -1,4 +1,4 @@
-    <Style name="stations">
+   <Style name="stations">
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom12;
