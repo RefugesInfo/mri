@@ -1802,8 +1802,8 @@
 &color-hillshade;
 &sea-areas;
 &areas-texture;  
-&contours;
 &water-areas;
+&contours;
 
 <Layer name="minor-roads">
     <StyleName>minor-roads-casing</StyleName>
@@ -1921,8 +1921,8 @@
 &administrative-borders;
   <!-- icons and text are over all other layers -->
 &areas-icons;  
-&area-text;
 &poi-icons;
+&area-text;
 &poi-text;
-  
+
 </Map>
