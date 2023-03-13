@@ -25,12 +25,12 @@
       <TextSymbolizer size="10" fill="#000033" fontset-name="sans-book" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
     <Rule>
-	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'lean_to' or [tourism] = 'basic_hut'</Filter>
+	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'basic_hut'</Filter>
 	    &maxscale_zoom13;
 	    <TextSymbolizer size="12" fill="brown" dy="15" fontset-name="sans-book" halo-radius="1">[name]</TextSymbolizer>
     </Rule>    
     <Rule>
-	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'lean_to' or [tourism] = 'basic_hut'</Filter>
+	    <Filter>[tourism] = 'alpine_hut' or [tourism]='wilderness_hut' or [tourism] = 'basic_hut'</Filter>
 	    &maxscale_zoom14;
 	    <TextSymbolizer size="12" fill="brown" dy="28" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
     </Rule>
