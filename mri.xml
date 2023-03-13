@@ -1909,7 +1909,7 @@
       </Parameter>
     </Datasource>
   </Layer>
-   <Layer name="planet roads text osm">
+  <Layer name="planet roads text osm" clear-label-cache="on"> <!-- Warning this clear-label-cache is to clear, from now on, all placements so that those down there are more important and on top -->
      <StyleName>roads-text</StyleName>
      <Datasource>
       &postgis-settings;
