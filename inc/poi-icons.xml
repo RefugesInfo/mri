@@ -1,4 +1,4 @@
-   <Style name="stations">
+   <Style name="points_importance_4">
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom12;
@@ -56,7 +56,7 @@
       <PointSymbolizer file="symbols/level_crossing.png"/>
     </Rule>
   </Style>
-   <Style name="symbols">
+   <Style name="points_importance_3">
     <Rule>
       &maxscale_zoom9;
       &minscale_zoom10;
@@ -123,11 +123,6 @@
     </Rule>
     <Rule>
 	    &maxscale_zoom16;
-	    <Filter>[tourism]='information'</Filter>
-	    <PointSymbolizer file="symbols/guidepost.png"/>
-    </Rule>
-    <Rule>
-	    &maxscale_zoom16;
 	    <Filter>[amenity]='drinking_water'</Filter>
 	    <PointSymbolizer file="symbols/drinking_water.png"/>
     </Rule>
@@ -162,7 +157,7 @@
       <PointSymbolizer file="symbols/gate2.png" allow-overlap="false"/>
     </Rule>
 </Style>
-<Style name="points">
+<Style name="points_importance_2">
     <Rule>
       &maxscale_zoom17;
       <Filter>[amenity]='atm'</Filter>
@@ -259,10 +254,19 @@
 	    <PointSymbolizer file="symbols/cross.png"/>
     </Rule>
   </Style>
+<Style name="points_importance_1">
+    <Rule>
+	    &maxscale_zoom16;
+	    <Filter>[tourism]='information'</Filter>
+	    <PointSymbolizer file="symbols/guidepost.png"/>
+    </Rule>
+</Style>
+
 <Layer name="amenity">
-  <StyleName>stations</StyleName>    
-  <StyleName>symbols</StyleName>
-  <StyleName>points</StyleName>
+  <StyleName>points_importance_4</StyleName>
+  <StyleName>points_importance_3</StyleName>
+  <StyleName>points_importance_2</StyleName>
+  <StyleName>points_importance_1</StyleName>
   <Datasource>
     &postgis-settings;
     <Parameter name="table">(select * from planet_osm_point where historic IS NOT NULL or amenity IS NOT NULL or tourism is NOT NULL or railway is NOT NULL or "natural" is NOT NULL or man_made is NOT NULL or highway is NOT NULL or aeroway is NOT NULL or power_source is NOT NULL) as amenity</Parameter>
