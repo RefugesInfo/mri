@@ -118,11 +118,6 @@
 	</Rule>
     <Rule>
 	    &maxscale_zoom15;
-	    <Filter>[historic]='wayside_cross'</Filter>
-	    <PointSymbolizer file="symbols/cross.png"/>
-    </Rule>
-    <Rule>
-	    &maxscale_zoom15;
 	    <Filter>[tourism]='viewpoint'</Filter>
 	    <PointSymbolizer file="symbols/viewpoint.png"/>
     </Rule>
@@ -257,6 +252,11 @@
       &maxscale_zoom17;
       <Filter>[amenity]='telephone'</Filter>
       <PointSymbolizer file="symbols/telephone.p.16.png"/>
+    </Rule>
+    <Rule>
+	    &maxscale_zoom15;
+	    <Filter>[historic]='wayside_cross'</Filter>
+	    <PointSymbolizer file="symbols/cross.png"/>
     </Rule>
   </Style>
 <Layer name="amenity">
