@@ -41,7 +41,7 @@
     </Rule>    
   </Style>
   
-  <Layer name="area-text">
+  <Layer name="area-text" clear-label-cache="on">
     <StyleName>area-text</StyleName>
     <Datasource>
       &postgis-settings;
