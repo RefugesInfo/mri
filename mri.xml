@@ -1802,8 +1802,8 @@
 &color-hillshade;
 &sea-areas;
 &areas-texture;  
-&water-areas;
 &contours;
+&water-areas;
 
 <Layer name="minor-roads">
     <StyleName>minor-roads-casing</StyleName>
