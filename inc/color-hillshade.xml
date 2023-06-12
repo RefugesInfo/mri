@@ -1,29 +1,13 @@
 <!-- Hillshaded maps, from zoom 1 to 9 merged with colored one, for zoom 10 and more, hillshades only -->
-<Style name="hillshade_d2">
+<Style name="hillshade">
 	<Rule>
 		&maxscale_zoom10;
-		&minscale_zoom14;
-		<RasterSymbolizer opacity="0.7" scaling="bilinear" />
-	</Rule>
-</Style>
-<Layer name="hillshade_d2">
-	<StyleName>hillshade_d2</StyleName>
-	<Datasource>
-		<Parameter name="type">gdal</Parameter>
-		<Parameter name="file">mapnik-data/hillshade/hillshade_d2.tif</Parameter>
-		<Parameter name="format">tiff</Parameter>
-	</Datasource>
-</Layer>
-
-<Style name="hillshade_full">
-	<Rule>
-		&maxscale_zoom15;
 		&minscale_zoom17;
-		<RasterSymbolizer opacity="0.7" scaling="bilinear" />
+		<RasterSymbolizer opacity="0.8" scaling="bilinear" />
 	</Rule>
 </Style>
-<Layer name="hillshade_full">
-	<StyleName>hillshade_full</StyleName>
+<Layer name="hillshade">
+	<StyleName>hillshade</StyleName>
 	<Datasource>
 		<Parameter name="type">gdal</Parameter>
 		<Parameter name="file">mapnik-data/hillshade/hillshade.tif</Parameter>
