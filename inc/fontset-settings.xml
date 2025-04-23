@@ -8,30 +8,30 @@ python -c "from mapnik import FontEngine as e;print '\n'.join(e.instance().face_
 
 <FontSet name="serif-book">
   <Font face-name="DejaVu Serif Book" />
-  <Font face-name="Unifont Medium" />
+  <Font face-name="Unifont Regular" />
 </FontSet>
 <FontSet name="sans-book">
   <Font face-name="DejaVu Sans Book" />
-  <Font face-name="Unifont Medium" />
+  <Font face-name="Unifont Regular" />
 </FontSet>
 <FontSet name="sans-condensed">
   <Font face-name="DejaVu Sans Condensed" />
-  <Font face-name="Unifont Medium" />
+  <Font face-name="Unifont Regular" />
 </FontSet>
 <FontSet name="sans-condensed-oblique">
   <Font face-name="DejaVu Sans Condensed Oblique" />
-  <Font face-name="Unifont Medium" />
+  <Font face-name="Unifont Regular" />
 </FontSet>
 <FontSet name="sans-extralight">
   <Font face-name="DejaVu Sans ExtraLight" />
-  <Font face-name="Unifont Medium" />
+  <Font face-name="Unifont Regular" />
 </FontSet>
 <FontSet name="sans-condensed-bold">
   <Font face-name="DejaVu Sans Condensed Bold" />
-  <Font face-name="Unifont Medium" />
+  <Font face-name="Unifont Regular" />
 </FontSet>
 <FontSet name="sans-oblique">
   <Font face-name="DejaVu Sans Oblique" />
-  <Font face-name="Unifont Medium" />
+  <Font face-name="Unifont Regular" />
 </FontSet>
 
